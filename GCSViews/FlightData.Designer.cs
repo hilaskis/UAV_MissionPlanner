@@ -21,7 +21,7 @@
             this.userItemsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.russianHudToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bindingSourceHud = new System.Windows.Forms.BindingSource(this.components);
-            this.tabControlactions = new System.Windows.Forms.TabControl();
+            this.radioDF = new System.Windows.Forms.TabControl();
             this.contextMenuStripactionstab = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.dropOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabQuick = new System.Windows.Forms.TabPage();
@@ -109,6 +109,11 @@
             this.BUT_select_script = new MissionPlanner.Controls.MyButton();
             this.tabPagemessages = new System.Windows.Forms.TabPage();
             this.txt_messagebox = new System.Windows.Forms.TextBox();
+            this.RDFpage = new System.Windows.Forms.TabPage();
+            this.freqActive = new System.Windows.Forms.Label();
+            this.freqLabelMSG = new System.Windows.Forms.Label();
+            this.freqBox = new System.Windows.Forms.TextBox();
+            this.BUTsetnewfrequency = new MissionPlanner.Controls.MyButton();
             this.tableMap = new System.Windows.Forms.TableLayoutPanel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.zg1 = new ZedGraph.ZedGraphControl();
@@ -122,6 +127,7 @@
             this.triggerCameraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.flightPlannerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setHomeHereToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.takeOffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.distanceBar1 = new MissionPlanner.Controls.DistanceBar();
             this.windDir1 = new MissionPlanner.Controls.WindDir();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
@@ -147,7 +153,6 @@
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Messagetabtimer = new System.Windows.Forms.Timer(this.components);
             this.bindingSourceStatusTab = new System.Windows.Forms.BindingSource(this.components);
-            this.takeOffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.MainH)).BeginInit();
             this.MainH.Panel1.SuspendLayout();
             this.MainH.Panel2.SuspendLayout();
@@ -158,7 +163,7 @@
             this.SubMainLeft.SuspendLayout();
             this.contextMenuStripHud.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceHud)).BeginInit();
-            this.tabControlactions.SuspendLayout();
+            this.radioDF.SuspendLayout();
             this.contextMenuStripactionstab.SuspendLayout();
             this.tabQuick.SuspendLayout();
             this.tableLayoutPanelQuick.SuspendLayout();
@@ -176,6 +181,7 @@
             this.tablogbrowse.SuspendLayout();
             this.tabScripts.SuspendLayout();
             this.tabPagemessages.SuspendLayout();
+            this.RDFpage.SuspendLayout();
             this.tableMap.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -216,7 +222,7 @@
             // 
             // SubMainLeft.Panel2
             // 
-            this.SubMainLeft.Panel2.Controls.Add(this.tabControlactions);
+            this.SubMainLeft.Panel2.Controls.Add(this.radioDF);
             // 
             // hud1
             // 
@@ -350,24 +356,25 @@
             // 
             this.bindingSourceHud.DataSource = typeof(MissionPlanner.CurrentState);
             // 
-            // tabControlactions
+            // radioDF
             // 
-            this.tabControlactions.ContextMenuStrip = this.contextMenuStripactionstab;
-            this.tabControlactions.Controls.Add(this.tabQuick);
-            this.tabControlactions.Controls.Add(this.tabActions);
-            this.tabControlactions.Controls.Add(this.tabActionsSimple);
-            this.tabControlactions.Controls.Add(this.tabGauges);
-            this.tabControlactions.Controls.Add(this.tabStatus);
-            this.tabControlactions.Controls.Add(this.tabServo);
-            this.tabControlactions.Controls.Add(this.tabTLogs);
-            this.tabControlactions.Controls.Add(this.tablogbrowse);
-            this.tabControlactions.Controls.Add(this.tabScripts);
-            this.tabControlactions.Controls.Add(this.tabPagemessages);
-            resources.ApplyResources(this.tabControlactions, "tabControlactions");
-            this.tabControlactions.Name = "tabControlactions";
-            this.tabControlactions.SelectedIndex = 0;
-            this.tabControlactions.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.tabControl1_DrawItem);
-            this.tabControlactions.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
+            this.radioDF.ContextMenuStrip = this.contextMenuStripactionstab;
+            this.radioDF.Controls.Add(this.tabQuick);
+            this.radioDF.Controls.Add(this.tabActions);
+            this.radioDF.Controls.Add(this.tabActionsSimple);
+            this.radioDF.Controls.Add(this.tabGauges);
+            this.radioDF.Controls.Add(this.tabStatus);
+            this.radioDF.Controls.Add(this.tabServo);
+            this.radioDF.Controls.Add(this.tabTLogs);
+            this.radioDF.Controls.Add(this.tablogbrowse);
+            this.radioDF.Controls.Add(this.tabScripts);
+            this.radioDF.Controls.Add(this.tabPagemessages);
+            this.radioDF.Controls.Add(this.RDFpage);
+            resources.ApplyResources(this.radioDF, "radioDF");
+            this.radioDF.Name = "radioDF";
+            this.radioDF.SelectedIndex = 0;
+            this.radioDF.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.tabControl1_DrawItem);
+            this.radioDF.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
             // contextMenuStripactionstab
             // 
@@ -1493,6 +1500,40 @@
             resources.ApplyResources(this.txt_messagebox, "txt_messagebox");
             this.txt_messagebox.Name = "txt_messagebox";
             // 
+            // RDFpage
+            // 
+            this.RDFpage.Controls.Add(this.freqActive);
+            this.RDFpage.Controls.Add(this.freqLabelMSG);
+            this.RDFpage.Controls.Add(this.freqBox);
+            this.RDFpage.Controls.Add(this.BUTsetnewfrequency);
+            resources.ApplyResources(this.RDFpage, "RDFpage");
+            this.RDFpage.Name = "RDFpage";
+            this.RDFpage.UseVisualStyleBackColor = true;
+            // 
+            // freqActive
+            // 
+            resources.ApplyResources(this.freqActive, "freqActive");
+            this.freqActive.Name = "freqActive";
+            // 
+            // freqLabelMSG
+            // 
+            resources.ApplyResources(this.freqLabelMSG, "freqLabelMSG");
+            this.freqLabelMSG.Name = "freqLabelMSG";
+            // 
+            // freqBox
+            // 
+            resources.ApplyResources(this.freqBox, "freqBox");
+            this.freqBox.Name = "freqBox";
+            this.toolTip1.SetToolTip(this.freqBox, resources.GetString("freqBox.ToolTip"));
+            // 
+            // BUTsetnewfrequency
+            // 
+            resources.ApplyResources(this.BUTsetnewfrequency, "BUTsetnewfrequency");
+            this.BUTsetnewfrequency.Name = "BUTsetnewfrequency";
+            this.toolTip1.SetToolTip(this.BUTsetnewfrequency, resources.GetString("BUTsetnewfrequency.ToolTip"));
+            this.BUTsetnewfrequency.UseVisualStyleBackColor = true;
+            this.BUTsetnewfrequency.Click += new System.EventHandler(this.BUTsetnewfrequency_Click);
+            // 
             // tableMap
             // 
             resources.ApplyResources(this.tableMap, "tableMap");
@@ -1607,6 +1648,12 @@
             this.setHomeHereToolStripMenuItem.Name = "setHomeHereToolStripMenuItem";
             resources.ApplyResources(this.setHomeHereToolStripMenuItem, "setHomeHereToolStripMenuItem");
             this.setHomeHereToolStripMenuItem.Click += new System.EventHandler(this.setHomeHereToolStripMenuItem_Click);
+            // 
+            // takeOffToolStripMenuItem
+            // 
+            this.takeOffToolStripMenuItem.Name = "takeOffToolStripMenuItem";
+            resources.ApplyResources(this.takeOffToolStripMenuItem, "takeOffToolStripMenuItem");
+            this.takeOffToolStripMenuItem.Click += new System.EventHandler(this.takeOffToolStripMenuItem_Click);
             // 
             // distanceBar1
             // 
@@ -1830,12 +1877,6 @@
             // 
             this.bindingSourceStatusTab.DataSource = typeof(MissionPlanner.CurrentState);
             // 
-            // takeOffToolStripMenuItem
-            // 
-            this.takeOffToolStripMenuItem.Name = "takeOffToolStripMenuItem";
-            resources.ApplyResources(this.takeOffToolStripMenuItem, "takeOffToolStripMenuItem");
-            this.takeOffToolStripMenuItem.Click += new System.EventHandler(this.takeOffToolStripMenuItem_Click);
-            // 
             // FlightData
             // 
             resources.ApplyResources(this, "$this");
@@ -1857,7 +1898,7 @@
             this.SubMainLeft.ResumeLayout(false);
             this.contextMenuStripHud.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceHud)).EndInit();
-            this.tabControlactions.ResumeLayout(false);
+            this.radioDF.ResumeLayout(false);
             this.contextMenuStripactionstab.ResumeLayout(false);
             this.tabQuick.ResumeLayout(false);
             this.tableLayoutPanelQuick.ResumeLayout(false);
@@ -1879,6 +1920,8 @@
             this.tabScripts.PerformLayout();
             this.tabPagemessages.ResumeLayout(false);
             this.tabPagemessages.PerformLayout();
+            this.RDFpage.ResumeLayout(false);
+            this.RDFpage.PerformLayout();
             this.tableMap.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
@@ -1926,7 +1969,7 @@
         private System.Windows.Forms.CheckBox CHK_autopan;
         private Controls.myGMAP gMapControl1;
         private ZedGraph.ZedGraphControl zg1;
-        private System.Windows.Forms.TabControl tabControlactions;
+        private System.Windows.Forms.TabControl radioDF;
         private System.Windows.Forms.TabPage tabGauges;
         private System.Windows.Forms.TabPage tabStatus;
         private System.Windows.Forms.TabPage tabActions;
@@ -2037,6 +2080,11 @@
         private Controls.DistanceBar distanceBar1;
         private Controls.MyButton but_autotune;
         private System.Windows.Forms.ToolStripMenuItem takeOffToolStripMenuItem;
+        private System.Windows.Forms.TabPage RDFpage;
+        private Controls.MyButton BUTsetnewfrequency;
+        private System.Windows.Forms.TextBox freqBox;
+        private System.Windows.Forms.Label freqActive;
+        private System.Windows.Forms.Label freqLabelMSG;
 
     }
 }

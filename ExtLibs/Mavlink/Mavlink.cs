@@ -176,6 +176,8 @@ BATTERY2 = 181,
 AHRS3 = 182,
 AUTOPILOT_VERSION_REQUEST = 183,
 LED_CONTROL = 186,
+TUNED_FREQUENCY = 187,
+PHASE_OFFSET = 188,
 EKF_STATUS_REPORT = 193,
 GIMBAL_REPORT = 200,
 GIMBAL_CONTROL = 201,
@@ -2051,6 +2053,19 @@ DEBUG = 254,
     
     };
 
+    [StructLayout(LayoutKind.Sequential, Pack = 1, Size = 4)]
+    public struct mavlink_phase_offset_t
+    {
+        /// <summary> Phase offset </summary>
+        public UInt16 direction;
+    };
+
+    [StructLayout(LayoutKind.Sequential, Pack = 1, Size = 4)]
+    public struct mavlink_tuned_frequency_t
+    {
+        /// <summary> Freq to tune too </summary>
+        public float frequency;
+    };
 
     [StructLayout(LayoutKind.Sequential,Pack=1,Size=29)]
     public struct mavlink_led_control_t

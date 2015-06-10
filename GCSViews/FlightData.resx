@@ -481,7 +481,7 @@
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tabQuick.Parent" xml:space="preserve">
-    <value>tabControlactions</value>
+    <value>radioDF</value>
   </data>
   <data name="&gt;&gt;tabQuick.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -577,7 +577,7 @@
     <value>modifyandSetSpeed</value>
   </data>
   <data name="&gt;&gt;modifyandSetSpeed.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ModifyandSet, MissionPlanner, Version=1.1.5596.33247, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ModifyandSet, MissionPlanner, Version=1.1.5633.24339, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;modifyandSetSpeed.Parent" xml:space="preserve">
     <value>tabActions</value>
@@ -598,7 +598,7 @@
     <value>modifyandSetAlt</value>
   </data>
   <data name="&gt;&gt;modifyandSetAlt.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ModifyandSet, MissionPlanner, Version=1.1.5596.33247, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ModifyandSet, MissionPlanner, Version=1.1.5633.24339, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;modifyandSetAlt.Parent" xml:space="preserve">
     <value>tabActions</value>
@@ -1054,7 +1054,7 @@
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tabActions.Parent" xml:space="preserve">
-    <value>tabControlactions</value>
+    <value>radioDF</value>
   </data>
   <data name="&gt;&gt;tabActions.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -1168,7 +1168,7 @@
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tabActionsSimple.Parent" xml:space="preserve">
-    <value>tabControlactions</value>
+    <value>radioDF</value>
   </data>
   <data name="&gt;&gt;tabActionsSimple.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -1321,7 +1321,7 @@
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tabGauges.Parent" xml:space="preserve">
-    <value>tabControlactions</value>
+    <value>radioDF</value>
   </data>
   <data name="&gt;&gt;tabGauges.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -1351,7 +1351,7 @@
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tabStatus.Parent" xml:space="preserve">
-    <value>tabControlactions</value>
+    <value>radioDF</value>
   </data>
   <data name="&gt;&gt;tabStatus.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -1372,7 +1372,7 @@
     <value>servoOptions1</value>
   </data>
   <data name="&gt;&gt;servoOptions1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5596.33247, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5633.24339, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions1.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1393,7 +1393,7 @@
     <value>servoOptions2</value>
   </data>
   <data name="&gt;&gt;servoOptions2.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5596.33247, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5633.24339, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions2.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1414,7 +1414,7 @@
     <value>servoOptions3</value>
   </data>
   <data name="&gt;&gt;servoOptions3.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5596.33247, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5633.24339, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions3.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1435,7 +1435,7 @@
     <value>servoOptions4</value>
   </data>
   <data name="&gt;&gt;servoOptions4.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5596.33247, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5633.24339, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions4.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1456,7 +1456,7 @@
     <value>servoOptions5</value>
   </data>
   <data name="&gt;&gt;servoOptions5.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5596.33247, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5633.24339, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions5.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1477,7 +1477,7 @@
     <value>servoOptions6</value>
   </data>
   <data name="&gt;&gt;servoOptions6.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5596.33247, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5633.24339, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions6.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1498,7 +1498,7 @@
     <value>servoOptions7</value>
   </data>
   <data name="&gt;&gt;servoOptions7.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5596.33247, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5633.24339, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions7.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1552,7 +1552,7 @@
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tabServo.Parent" xml:space="preserve">
-    <value>tabControlactions</value>
+    <value>radioDF</value>
   </data>
   <data name="&gt;&gt;tabServo.ZOrder" xml:space="preserve">
     <value>5</value>
@@ -2062,7 +2062,7 @@
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tabTLogs.Parent" xml:space="preserve">
-    <value>tabControlactions</value>
+    <value>radioDF</value>
   </data>
   <data name="&gt;&gt;tabTLogs.ZOrder" xml:space="preserve">
     <value>6</value>
@@ -2251,7 +2251,7 @@
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tablogbrowse.Parent" xml:space="preserve">
-    <value>tabControlactions</value>
+    <value>radioDF</value>
   </data>
   <data name="&gt;&gt;tablogbrowse.ZOrder" xml:space="preserve">
     <value>7</value>
@@ -2485,7 +2485,7 @@
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tabScripts.Parent" xml:space="preserve">
-    <value>tabControlactions</value>
+    <value>radioDF</value>
   </data>
   <data name="&gt;&gt;tabScripts.ZOrder" xml:space="preserve">
     <value>8</value>
@@ -2539,36 +2539,174 @@
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tabPagemessages.Parent" xml:space="preserve">
-    <value>tabControlactions</value>
+    <value>radioDF</value>
   </data>
   <data name="&gt;&gt;tabPagemessages.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="tabControlactions.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="freqActive.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="freqActive.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 26</value>
+  </data>
+  <data name="freqActive.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="freqActive.TabIndex" type="System.Int32, mscorlib">
+    <value>89</value>
+  </data>
+  <data name="freqActive.Text" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;freqActive.Name" xml:space="preserve">
+    <value>freqActive</value>
+  </data>
+  <data name="&gt;&gt;freqActive.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;freqActive.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;freqActive.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="freqLabelMSG.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="freqLabelMSG.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 3</value>
+  </data>
+  <data name="freqLabelMSG.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 13</value>
+  </data>
+  <data name="freqLabelMSG.TabIndex" type="System.Int32, mscorlib">
+    <value>88</value>
+  </data>
+  <data name="freqLabelMSG.Text" xml:space="preserve">
+    <value>Current Frequency:</value>
+  </data>
+  <data name="&gt;&gt;freqLabelMSG.Name" xml:space="preserve">
+    <value>freqLabelMSG</value>
+  </data>
+  <data name="&gt;&gt;freqLabelMSG.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;freqLabelMSG.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;freqLabelMSG.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="freqBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 120</value>
+  </data>
+  <data name="freqBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
+  </data>
+  <data name="freqBox.TabIndex" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="freqBox.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="freqBox.ToolTip" xml:space="preserve">
+    <value>Enter frequency here</value>
+  </data>
+  <data name="&gt;&gt;freqBox.Name" xml:space="preserve">
+    <value>freqBox</value>
+  </data>
+  <data name="&gt;&gt;freqBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;freqBox.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;freqBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="BUTsetnewfrequency.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BUTsetnewfrequency.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 91</value>
+  </data>
+  <data name="BUTsetnewfrequency.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 23</value>
+  </data>
+  <data name="BUTsetnewfrequency.TabIndex" type="System.Int32, mscorlib">
+    <value>86</value>
+  </data>
+  <data name="BUTsetnewfrequency.Text" xml:space="preserve">
+    <value>SetFrequency</value>
+  </data>
+  <data name="BUTsetnewfrequency.ToolTip" xml:space="preserve">
+    <value>Set the frequency to be searched for</value>
+  </data>
+  <data name="&gt;&gt;BUTsetnewfrequency.Name" xml:space="preserve">
+    <value>BUTsetnewfrequency</value>
+  </data>
+  <data name="&gt;&gt;BUTsetnewfrequency.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;BUTsetnewfrequency.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;BUTsetnewfrequency.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="RDFpage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="RDFpage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="RDFpage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>350, 162</value>
+  </data>
+  <data name="RDFpage.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="RDFpage.Text" xml:space="preserve">
+    <value>RDF</value>
+  </data>
+  <data name="&gt;&gt;RDFpage.Name" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;RDFpage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RDFpage.Parent" xml:space="preserve">
+    <value>radioDF</value>
+  </data>
+  <data name="&gt;&gt;RDFpage.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="radioDF.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="tabControlactions.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="radioDF.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="tabControlactions.Padding" type="System.Drawing.Point, System.Drawing">
+  <data name="radioDF.Padding" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="tabControlactions.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="radioDF.Size" type="System.Drawing.Size, System.Drawing">
     <value>358, 188</value>
   </data>
-  <data name="tabControlactions.TabIndex" type="System.Int32, mscorlib">
+  <data name="radioDF.TabIndex" type="System.Int32, mscorlib">
     <value>84</value>
   </data>
-  <data name="&gt;&gt;tabControlactions.Name" xml:space="preserve">
-    <value>tabControlactions</value>
+  <data name="&gt;&gt;radioDF.Name" xml:space="preserve">
+    <value>radioDF</value>
   </data>
-  <data name="&gt;&gt;tabControlactions.Type" xml:space="preserve">
+  <data name="&gt;&gt;radioDF.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabControlactions.Parent" xml:space="preserve">
+  <data name="&gt;&gt;radioDF.Parent" xml:space="preserve">
     <value>SubMainLeft.Panel2</value>
   </data>
-  <data name="&gt;&gt;tabControlactions.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;radioDF.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="&gt;&gt;SubMainLeft.Panel2.Name" xml:space="preserve">
@@ -2656,7 +2794,7 @@
     <value>zg1</value>
   </data>
   <data name="&gt;&gt;zg1.Type" xml:space="preserve">
-    <value>ZedGraph.ZedGraphControl, ZedGraph, Version=5.1.5.32194, Culture=neutral, PublicKeyToken=null</value>
+    <value>ZedGraph.ZedGraphControl, ZedGraph, Version=5.1.5.24309, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;zg1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel1</value>
@@ -2740,7 +2878,7 @@
     <value>TakeOff</value>
   </data>
   <data name="contextMenuStripMap.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 202</value>
+    <value>189, 180</value>
   </data>
   <data name="&gt;&gt;contextMenuStripMap.Name" xml:space="preserve">
     <value>contextMenuStripMap</value>
@@ -2764,7 +2902,7 @@
     <value>distanceBar1</value>
   </data>
   <data name="&gt;&gt;distanceBar1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.DistanceBar, MissionPlanner, Version=1.1.5596.33247, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.DistanceBar, MissionPlanner, Version=1.1.5633.24339, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;distanceBar1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
@@ -3361,7 +3499,7 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>108</value>
+    <value>25</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
@@ -3486,6 +3624,12 @@
   <data name="&gt;&gt;setHomeHereToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;takeOffToolStripMenuItem.Name" xml:space="preserve">
+    <value>takeOffToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;takeOffToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;bindingSource1.Name" xml:space="preserve">
     <value>bindingSource1</value>
   </data>
@@ -3539,12 +3683,6 @@
   </data>
   <data name="&gt;&gt;bindingSourceStatusTab.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;takeOffToolStripMenuItem.Name" xml:space="preserve">
-    <value>takeOffToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;takeOffToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FlightData</value>

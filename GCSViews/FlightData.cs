@@ -448,28 +448,28 @@ namespace MissionPlanner.GCSViews
         {
             if (!MainV2.Advanced)
             {
-                if (!tabControlactions.TabPages.Contains(tabActionsSimple))
-                    tabControlactions.TabPages.Add(tabActionsSimple);
+                if (!radioDF.TabPages.Contains(tabActionsSimple))
+                    radioDF.TabPages.Add(tabActionsSimple);
                 //tabControlactions.TabPages.Remove(tabGauges);
-                tabControlactions.TabPages.Remove(tabActions);
-                tabControlactions.TabPages.Remove(tabStatus);
-                tabControlactions.TabPages.Remove(tabServo);
-                tabControlactions.TabPages.Remove(tabScripts);
+                radioDF.TabPages.Remove(tabActions);
+                radioDF.TabPages.Remove(tabStatus);
+                radioDF.TabPages.Remove(tabServo);
+                radioDF.TabPages.Remove(tabScripts);
 
-                tabControlactions.Invalidate();
+                radioDF.Invalidate();
             }
             else
             {
                 //tabControlactions.TabPages.Remove(tabGauges);
-                tabControlactions.TabPages.Remove(tabActionsSimple);
-                if (!tabControlactions.TabPages.Contains(tabActions))
-                    tabControlactions.TabPages.Add(tabActions);
-                if (!tabControlactions.TabPages.Contains(tabStatus))
-                    tabControlactions.TabPages.Add(tabStatus);
-                if (!tabControlactions.TabPages.Contains(tabServo))
-                    tabControlactions.TabPages.Add(tabServo);
-                if (!tabControlactions.TabPages.Contains(tabScripts))
-                    tabControlactions.TabPages.Add(tabScripts);
+                radioDF.TabPages.Remove(tabActionsSimple);
+                if (!radioDF.TabPages.Contains(tabActions))
+                    radioDF.TabPages.Add(tabActions);
+                if (!radioDF.TabPages.Contains(tabStatus))
+                    radioDF.TabPages.Add(tabStatus);
+                if (!radioDF.TabPages.Contains(tabServo))
+                    radioDF.TabPages.Add(tabServo);
+                if (!radioDF.TabPages.Contains(tabScripts))
+                    radioDF.TabPages.Add(tabScripts);
             }
         }
 
@@ -1314,15 +1314,15 @@ namespace MissionPlanner.GCSViews
                             MainV2.comPort.MAV.cs.UpdateCurrentSettings(bindingSourceHud);
                             //Console.WriteLine("DONE ");
 
-                            if (tabControlactions.SelectedTab == tabStatus)
+                            if (radioDF.SelectedTab == tabStatus)
                             {
                                 MainV2.comPort.MAV.cs.UpdateCurrentSettings(bindingSourceStatusTab);
                             }
-                            else if (tabControlactions.SelectedTab == tabQuick)
+                            else if (radioDF.SelectedTab == tabQuick)
                             {
                                 MainV2.comPort.MAV.cs.UpdateCurrentSettings(bindingSourceQuickTab);
                             }
-                            else if (tabControlactions.SelectedTab == tabGauges)
+                            else if (radioDF.SelectedTab == tabGauges)
                             {
                                 MainV2.comPort.MAV.cs.UpdateCurrentSettings(bindingSourceGaugesTab);
                             }
@@ -2139,11 +2139,11 @@ namespace MissionPlanner.GCSViews
         {
             Messagetabtimer.Stop();
 
-            if (tabControlactions.SelectedTab == tabStatus)
+            if (radioDF.SelectedTab == tabStatus)
             {
                 tabStatus_Resize(sender, e);
             }
-            else if (tabControlactions.SelectedTab == tabPagemessages)
+            else if (radioDF.SelectedTab == tabPagemessages)
             {
                 Messagetabtimer.Start();
             }
@@ -2156,7 +2156,7 @@ namespace MissionPlanner.GCSViews
                 //  tabStatus.Controls.Remove(temp);
                 // }
 
-                if (tabControlactions.SelectedTab == tabQuick)
+                if (radioDF.SelectedTab == tabQuick)
                 {
 
                 }
@@ -3338,6 +3338,27 @@ namespace MissionPlanner.GCSViews
 
                 MainV2.comPort.doCommand(MAVLink.MAV_CMD.TAKEOFF, 0, 0, 0, 0, 0, 0, MainV2.comPort.MAV.GuidedMode.z);
             }
+        }
+
+        private void BUTsetnewfrequency_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Disable button.
+                ((Button)sender).Enabled = false;
+
+                // Get the value entered out of the text box.
+                float freq = Convert.ToSingle(freqBox.Text);
+
+                // Calls the function that makes the packet.
+                MainV2.comPort.SendFrequency(freq);
+
+                // Set the current frequency text.
+                freqActive.Text = freqBox.Text;
+
+            }
+            catch { CustomMessageBox.Show(Strings.CommandFailed, Strings.ERROR); }
+            ((Button)sender).Enabled = true;
         }
 
     }

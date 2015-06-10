@@ -627,7 +627,7 @@
         <field type="uint8_t" name="target_system">System ID</field>
         <field type="uint8_t" name="target_component">Component ID</field>
     </message>
-
+              
     <message name="LED_CONTROL" id="186">
         <description>Control vehicle LEDs</description>
         <field type="uint8_t" name="target_system">System ID</field>
@@ -638,6 +638,16 @@
         <field type="uint8_t[24]" name="custom_bytes">Custom Bytes</field>
     </message>
 
+    <message name="TUNED_FREQUENCY" id="187">
+        <description>Sets the tuned frequency to be looked for.</description>
+        <field type="float" name="frequency"></field>
+    </message>       
+       
+    <message name="PHASE_OFFSET" id="188">
+        <description>Gets the phase offset of the signal.</description>
+        <field type="uint16_t" name="direction"></field>
+    </message>
+       
     <!-- 191 to 192 RESERVED for mag calibration -->
     
     <!-- EKF status message from autopilot to GCS.   -->

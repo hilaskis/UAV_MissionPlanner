@@ -1594,7 +1594,7 @@ Please check the following
                     if (buffer[5] == (byte)MAVLINK_MSG_ID.MISSION_COUNT)
                     {
                         var count = buffer.ByteArrayToStructure<mavlink_mission_count_t>(6);
-
+                        
 
                         log.Info("wpcount: " + count.count);
                         giveComport = false;
@@ -3470,6 +3470,37 @@ Please check the following
             if (_bytesSentSubj != null)
                 _bytesSentSubj.Dispose();
             this.Close();
+        }
+
+        /// <summary>
+        /// Receives the phase offset in a MAVLink packet.  
+        /// </summary>
+        public void GetPhaseOffset()
+        {
+            // The buffer where the data stream of the incoming packet is to be placed.
+            byte[] buffer;
+
+            // Get the contents of the packet and place them into the buffer.
+            buffer = readPacket();
+
+            // Get the direction of the received signal out of the packet.
+            var bearingPkt = buffer.ByteArrayToStructure<mavlink_phase_offset_t>(6);
+
+            absBearing temp = new absBearing();
+
+            temp.bearing = bearingPkt.direction;
+        }
+
+        /// <summary>
+        /// Sends the frequency of the collar to detect to the PixHawk. 
+        /// </summary>
+        public void SendFrequency(float freq)
+        {
+            MAVLink.mavlink_tuned_frequency_t change = new MAVLink.mavlink_tuned_frequency_t();
+            change.frequency = freq;
+
+            generatePacket((byte)MAVLINK_MSG_ID.TUNED_FREQUENCY, change);
+            
         }
     }
 }
