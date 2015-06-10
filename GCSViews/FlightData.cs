@@ -3369,6 +3369,7 @@ namespace MissionPlanner.GCSViews
             signalDir.Speed = 10;
             signalDir.Direction = signalDir.Direction - 180 + 1;
             signalDir.Update();
+            absBearingValue.Text = signalDir.Direction.ToString();
         }
 
         private void RDFpage_Click(object sender, EventArgs e)

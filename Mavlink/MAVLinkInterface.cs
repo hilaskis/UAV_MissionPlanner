@@ -2665,12 +2665,13 @@ Please check the following
             }
             catch { }
 
-            // Check if the packet is a absolue brearing packet.
+            // Check if the packet is a absolue brearing packet. 
             if (sysid == 188)
             {
-                // Console writing is for debugging only.
-                Console.WriteLine("Received Phase Offset MAVLINK packet.\n");
-                return buffer;// new byte[0];
+                // Get the bearing data out of the packet.
+                GetPhaseOffset(ref buffer);
+
+                return buffer;
             }
 
             // update last valid packet receive time
