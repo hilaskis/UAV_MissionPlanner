@@ -2665,6 +2665,14 @@ Please check the following
             }
             catch { }
 
+            // Check if the packet is a absolue brearing packet.
+            if (sysid == 188)
+            {
+                // Console writing is for debugging only.
+                Console.WriteLine("Received Phase Offset MAVLINK packet.\n");
+                return buffer;// new byte[0];
+            }
+
             // update last valid packet receive time
             MAVlist[sysid].lastvalidpacket = DateTime.Now;
 
@@ -3475,10 +3483,10 @@ Please check the following
         /// <summary>
         /// Receives the phase offset in a MAVLink packet.  
         /// </summary>
-        public void GetPhaseOffset()
+        public void GetPhaseOffset(ref byte[] buffer)
         {
             // The buffer where the data stream of the incoming packet is to be placed.
-            byte[] buffer;
+            //byte[] buffer;
 
             // Get the contents of the packet and place them into the buffer.
             buffer = readPacket();
@@ -3489,6 +3497,8 @@ Please check the following
             absBearing temp = new absBearing();
 
             temp.bearing = bearingPkt.direction;
+
+            
         }
 
         /// <summary>
@@ -3500,6 +3510,7 @@ Please check the following
             change.frequency = freq;
 
             generatePacket((byte)MAVLINK_MSG_ID.TUNED_FREQUENCY, change);
+            Console.Write("MAVLINK - Sending a Tuned Frequency Packet.\n");
             
         }
     }

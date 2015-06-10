@@ -577,7 +577,7 @@
     <value>modifyandSetSpeed</value>
   </data>
   <data name="&gt;&gt;modifyandSetSpeed.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ModifyandSet, MissionPlanner, Version=1.1.5633.24339, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ModifyandSet, MissionPlanner, Version=1.1.5639.25290, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;modifyandSetSpeed.Parent" xml:space="preserve">
     <value>tabActions</value>
@@ -598,7 +598,7 @@
     <value>modifyandSetAlt</value>
   </data>
   <data name="&gt;&gt;modifyandSetAlt.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ModifyandSet, MissionPlanner, Version=1.1.5633.24339, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ModifyandSet, MissionPlanner, Version=1.1.5639.25290, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;modifyandSetAlt.Parent" xml:space="preserve">
     <value>tabActions</value>
@@ -1372,7 +1372,7 @@
     <value>servoOptions1</value>
   </data>
   <data name="&gt;&gt;servoOptions1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5633.24339, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5639.25290, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions1.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1393,7 +1393,7 @@
     <value>servoOptions2</value>
   </data>
   <data name="&gt;&gt;servoOptions2.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5633.24339, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5639.25290, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions2.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1414,7 +1414,7 @@
     <value>servoOptions3</value>
   </data>
   <data name="&gt;&gt;servoOptions3.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5633.24339, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5639.25290, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions3.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1435,7 +1435,7 @@
     <value>servoOptions4</value>
   </data>
   <data name="&gt;&gt;servoOptions4.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5633.24339, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5639.25290, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions4.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1456,7 +1456,7 @@
     <value>servoOptions5</value>
   </data>
   <data name="&gt;&gt;servoOptions5.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5633.24339, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5639.25290, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions5.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1477,7 +1477,7 @@
     <value>servoOptions6</value>
   </data>
   <data name="&gt;&gt;servoOptions6.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5633.24339, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5639.25290, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions6.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1498,7 +1498,7 @@
     <value>servoOptions7</value>
   </data>
   <data name="&gt;&gt;servoOptions7.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5633.24339, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5639.25290, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions7.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -2544,8 +2544,98 @@
   <data name="&gt;&gt;tabPagemessages.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
+  <data name="signalDir.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="signalDir.Location" type="System.Drawing.Point, System.Drawing">
+    <value>189, 38</value>
+  </data>
+  <data name="signalDir.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 144</value>
+  </data>
+  <data name="signalDir.TabIndex" type="System.Int32, mscorlib">
+    <value>92</value>
+  </data>
+  <data name="signalDir.ToolTip" xml:space="preserve">
+    <value>This shows the absolute bearing of the signal.</value>
+  </data>
+  <data name="&gt;&gt;signalDir.Name" xml:space="preserve">
+    <value>signalDir</value>
+  </data>
+  <data name="&gt;&gt;signalDir.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.WindDir, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;signalDir.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;signalDir.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="absBearingValue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="absBearingValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="absBearingValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>282, 3</value>
+  </data>
+  <data name="absBearingValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 13</value>
+  </data>
+  <data name="absBearingValue.TabIndex" type="System.Int32, mscorlib">
+    <value>91</value>
+  </data>
+  <data name="absBearingValue.Text" xml:space="preserve">
+    <value>NotActive</value>
+  </data>
+  <data name="&gt;&gt;absBearingValue.Name" xml:space="preserve">
+    <value>absBearingValue</value>
+  </data>
+  <data name="&gt;&gt;absBearingValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;absBearingValue.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;absBearingValue.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="absBearingMsg.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="absBearingMsg.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="absBearingMsg.Location" type="System.Drawing.Point, System.Drawing">
+    <value>186, 3</value>
+  </data>
+  <data name="absBearingMsg.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 13</value>
+  </data>
+  <data name="absBearingMsg.TabIndex" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="absBearingMsg.Text" xml:space="preserve">
+    <value>Absolute Bearing:</value>
+  </data>
+  <data name="&gt;&gt;absBearingMsg.Name" xml:space="preserve">
+    <value>absBearingMsg</value>
+  </data>
+  <data name="&gt;&gt;absBearingMsg.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;absBearingMsg.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;absBearingMsg.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="freqActive.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="freqActive.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="freqActive.Location" type="System.Drawing.Point, System.Drawing">
     <value>25, 26</value>
@@ -2569,10 +2659,13 @@
     <value>RDFpage</value>
   </data>
   <data name="&gt;&gt;freqActive.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
   </data>
   <data name="freqLabelMSG.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="freqLabelMSG.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="freqLabelMSG.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 3</value>
@@ -2596,7 +2689,7 @@
     <value>RDFpage</value>
   </data>
   <data name="&gt;&gt;freqLabelMSG.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
   <data name="freqBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 120</value>
@@ -2623,7 +2716,7 @@
     <value>RDFpage</value>
   </data>
   <data name="&gt;&gt;freqBox.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>5</value>
   </data>
   <data name="BUTsetnewfrequency.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2653,7 +2746,7 @@
     <value>RDFpage</value>
   </data>
   <data name="&gt;&gt;BUTsetnewfrequency.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>6</value>
   </data>
   <data name="RDFpage.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
@@ -2794,7 +2887,7 @@
     <value>zg1</value>
   </data>
   <data name="&gt;&gt;zg1.Type" xml:space="preserve">
-    <value>ZedGraph.ZedGraphControl, ZedGraph, Version=5.1.5.24309, Culture=neutral, PublicKeyToken=null</value>
+    <value>ZedGraph.ZedGraphControl, ZedGraph, Version=5.1.5.25224, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;zg1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel1</value>
@@ -2902,7 +2995,7 @@
     <value>distanceBar1</value>
   </data>
   <data name="&gt;&gt;distanceBar1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.DistanceBar, MissionPlanner, Version=1.1.5633.24339, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.DistanceBar, MissionPlanner, Version=1.1.5639.25290, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;distanceBar1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>

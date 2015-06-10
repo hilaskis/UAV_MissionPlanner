@@ -110,6 +110,9 @@
             this.tabPagemessages = new System.Windows.Forms.TabPage();
             this.txt_messagebox = new System.Windows.Forms.TextBox();
             this.RDFpage = new System.Windows.Forms.TabPage();
+            this.signalDir = new MissionPlanner.Controls.WindDir();
+            this.absBearingValue = new System.Windows.Forms.Label();
+            this.absBearingMsg = new System.Windows.Forms.Label();
             this.freqActive = new System.Windows.Forms.Label();
             this.freqLabelMSG = new System.Windows.Forms.Label();
             this.freqBox = new System.Windows.Forms.TextBox();
@@ -1502,6 +1505,9 @@
             // 
             // RDFpage
             // 
+            this.RDFpage.Controls.Add(this.signalDir);
+            this.RDFpage.Controls.Add(this.absBearingValue);
+            this.RDFpage.Controls.Add(this.absBearingMsg);
             this.RDFpage.Controls.Add(this.freqActive);
             this.RDFpage.Controls.Add(this.freqLabelMSG);
             this.RDFpage.Controls.Add(this.freqBox);
@@ -1509,6 +1515,26 @@
             resources.ApplyResources(this.RDFpage, "RDFpage");
             this.RDFpage.Name = "RDFpage";
             this.RDFpage.UseVisualStyleBackColor = true;
+            this.RDFpage.Click += new System.EventHandler(this.RDFpage_Click);
+            // 
+            // signalDir
+            // 
+            this.signalDir.BackColor = System.Drawing.Color.Transparent;
+            this.signalDir.Direction = 180D;
+            resources.ApplyResources(this.signalDir, "signalDir");
+            this.signalDir.Name = "signalDir";
+            this.signalDir.Speed = 0D;
+            this.toolTip1.SetToolTip(this.signalDir, resources.GetString("signalDir.ToolTip"));
+            // 
+            // absBearingValue
+            // 
+            resources.ApplyResources(this.absBearingValue, "absBearingValue");
+            this.absBearingValue.Name = "absBearingValue";
+            // 
+            // absBearingMsg
+            // 
+            resources.ApplyResources(this.absBearingMsg, "absBearingMsg");
+            this.absBearingMsg.Name = "absBearingMsg";
             // 
             // freqActive
             // 
@@ -1668,7 +1694,7 @@
             this.windDir1.BackColor = System.Drawing.Color.Transparent;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 180D;
+            this.windDir1.Direction = 360D;
             resources.ApplyResources(this.windDir1, "windDir1");
             this.windDir1.Name = "windDir1";
             this.windDir1.Speed = 0D;
@@ -2085,6 +2111,9 @@
         private System.Windows.Forms.TextBox freqBox;
         private System.Windows.Forms.Label freqActive;
         private System.Windows.Forms.Label freqLabelMSG;
+        private System.Windows.Forms.Label absBearingValue;
+        private System.Windows.Forms.Label absBearingMsg;
+        private Controls.WindDir signalDir;
 
     }
 }

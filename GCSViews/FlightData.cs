@@ -3356,9 +3356,24 @@ namespace MissionPlanner.GCSViews
                 // Set the current frequency text.
                 freqActive.Text = freqBox.Text;
 
+                updateABSBearing();
+
             }
             catch { CustomMessageBox.Show(Strings.CommandFailed, Strings.ERROR); }
             ((Button)sender).Enabled = true;
+        }
+
+        private void updateABSBearing()
+        {
+            
+            signalDir.Speed = 10;
+            signalDir.Direction = signalDir.Direction - 180 + 1;
+            signalDir.Update();
+        }
+
+        private void RDFpage_Click(object sender, EventArgs e)
+        {
+
         }
 
     }
