@@ -20,6 +20,9 @@ using System.Speech.Synthesis;
 
 namespace MissionPlanner
 {
+    // Define a delegate to handle GUI updating when bearing recieved.
+    public delegate void Caller();
+
     public partial class MainV2 : Form
     {
         private static readonly ILog log =
@@ -313,6 +316,8 @@ namespace MissionPlanner
 
             AdvancedChanged += updateAdvanced;
 
+            
+
             //startup console
             TCPConsole.Write((byte)'S');
 
@@ -474,6 +479,9 @@ namespace MissionPlanner
             {
                 log.Info("Create FD");
                 FlightData = new GCSViews.FlightData();
+
+                // Subscribe to FlightData.updateABSBearing - This is called when bearing recieved.
+                comPort.call += FlightData.updateABSBearing;
                 log.Info("Create FP");
                 FlightPlanner = new GCSViews.FlightPlanner();
                 //Configuration = new GCSViews.ConfigurationView.Setup();

@@ -18,11 +18,15 @@ using MissionPlanner.Comms;
 using MissionPlanner.Utilities;
 using System.Windows.Forms;
 using MissionPlanner.HIL;
+using MissionPlanner.GCSViews;
 
 namespace MissionPlanner
 {
     public class MAVLinkInterface: MAVLink, IDisposable
     {
+        // Create an instance of the Caller delegate.
+        public Caller call;
+
         private static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
         public ICommsSerial BaseStream { get; set; }
 
@@ -139,8 +143,6 @@ namespace MissionPlanner
         int bps1 = 0;
         int bps2 = 0;
         public DateTime bpstime { get; set; }
-
-        
 
         public MAVLinkInterface()
         {
@@ -2666,7 +2668,7 @@ Please check the following
             catch { }
 
             // Check if the packet is a absolue brearing packet. 
-            if (sysid == 188)
+            if (buffer[5] == 188)
             {
                 // Get the bearing data out of the packet.
                 GetPhaseOffset(ref buffer);
@@ -3486,19 +3488,18 @@ Please check the following
         /// </summary>
         public void GetPhaseOffset(ref byte[] buffer)
         {
-            // The buffer where the data stream of the incoming packet is to be placed.
-            //byte[] buffer;
-
-            // Get the contents of the packet and place them into the buffer.
-            buffer = readPacket();
 
             // Get the direction of the received signal out of the packet.
             var bearingPkt = buffer.ByteArrayToStructure<mavlink_phase_offset_t>(6);
 
-            absBearing temp = new absBearing();
+            // Update the bearing in the absBearing instance.
+            absBearing.setBearing(bearingPkt.direction);
 
-            temp.bearing = bearingPkt.direction;
-
+            // If the call has been subscribed too then it will execute.
+            if (call != null) 
+            { 
+                call(); 
+            }
             
         }
 
@@ -3511,7 +3512,6 @@ Please check the following
             change.frequency = freq;
 
             generatePacket((byte)MAVLINK_MSG_ID.TUNED_FREQUENCY, change);
-            Console.Write("MAVLINK - Sending a Tuned Frequency Packet.\n");
             
         }
     }

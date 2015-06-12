@@ -5,18 +5,25 @@ using System.Text;
 
 namespace MissionPlanner.Utilities
 {
-    /// <summary>
-    /// Struct of a bearing object.
-    /// </summary>
-    public struct absBearing
+    public static class absBearing
     {
-        public absBearing Set(UInt16 bearing)
-        {
-            this.bearing = bearing;
 
-            return this;
+        public static double bearing;
+
+        static absBearing()
+        {
+            bearing = 0;
         }
 
-        public UInt16 bearing;  // Bearing received from the craft.
-    };
+        static public double getBearing()
+        {
+            return bearing;
+        }
+
+        static public void setBearing(double newBearing)
+        {
+            bearing = newBearing;
+        }
+    }
+
 }

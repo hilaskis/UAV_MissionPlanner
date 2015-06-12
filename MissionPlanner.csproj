@@ -2008,6 +2008,7 @@
     </Compile>
     <None Include="Properties\DataSources\MissionPlanner.GCSViews.InitialSetup.datasource" />
     <None Include="Properties\DataSources\MissionPlanner.GCSViews.SoftwareConfig.datasource" />
+    <None Include="Properties\DataSources\MissionPlanner.Utilities.absBearing.datasource" />
     <None Include="README.md" />
     <Compile Include="Splash.cs">
       <SubType>Form</SubType>
