@@ -77,13 +77,43 @@ namespace MissionPlanner.Controls
             x = x / scale * Speed;
             y = y / scale * Speed;
 
+            //Lines for North, East, South, West or 0, 90, 180, 270.
+            e.Graphics.DrawLine(blackpen, this.Width / 2, this.Height / 2, this.Width / 2, this.Height);
+            e.Graphics.DrawLine(blackpen, this.Width / 2, this.Height / 2, this.Width, this.Height / 2);
+            e.Graphics.DrawLine(blackpen, this.Width / 2, this.Height / 2, this.Width / 2, 0);
+            e.Graphics.DrawLine(blackpen, this.Width / 2, this.Height / 2, 0, this.Height / 2);
+
+            //Lines for 45, 135, 225, 315.
+            double xx = (this.Width / 2) * Math.Cos((45) * deg2rad) + (this.Width / 2);
+            double yy = (this.Height / 2) * Math.Sin((45) * deg2rad) + (this.Height / 2);
+            e.Graphics.DrawLine(blackpen, this.Width / 2, this.Height / 2, (float)xx, (float)yy);
+
+            xx = (this.Width / 2) * Math.Cos((135) * deg2rad) + (this.Width / 2);
+            yy = (this.Height / 2) * Math.Sin((135) * deg2rad) + (this.Height / 2);
+            e.Graphics.DrawLine(blackpen, this.Width / 2, this.Height / 2, (float)xx, (float)yy);
+
+            xx = (this.Width / 2) * Math.Cos((225) * deg2rad) + (this.Width / 2);
+            yy = (this.Height / 2) * Math.Sin((225) * deg2rad) + (this.Height / 2);
+            e.Graphics.DrawLine(blackpen, this.Width / 2, this.Height / 2, (float)xx, (float)yy);
+
+            xx = (this.Width / 2) * Math.Cos((315) * deg2rad) + (this.Width / 2);
+            yy = (this.Height / 2) * Math.Sin((315) * deg2rad) + (this.Height / 2);
+            e.Graphics.DrawLine(blackpen, this.Width / 2, this.Height / 2, (float)xx, (float)yy);
+
+            // Labels for the heading markers
+            //e.Graphics.DrawString("360", this.Font, Brushes.Red, (float)(0 + (this.Width / 2) - 20), (float)0);
+
+
             if (x != 0 || y != 0)
             {
                 float outx =  (float)(this.Width / 2 + x);
                 float outy =  (float)(this.Height / 2 + y);
 
+
                 //line
                 e.Graphics.DrawLine(redpen, this.Width / 2, this.Height / 2,outx,outy);
+
+
 
                 // arrow
 
@@ -97,8 +127,12 @@ namespace MissionPlanner.Controls
                 
                 e.Graphics.DrawLine(redpen, outx, outy, outx - x1, outy - y1);
             }
+            
+            /* This commented line controls display of the wind speed on the GUI.  
+             * So far we will keep it commented out until we know how we are logging the 
+             magnitude information and relating it to the user.*/
 
-            e.Graphics.DrawString(Speed.ToString("0"), this.Font, Brushes.Red, (float)0, (float)0);
+            //e.Graphics.DrawString(Speed.ToString("0"), this.Font, Brushes.Red, (float)0, (float)0);
         }
 
         protected override void OnPaintBackground(PaintEventArgs e)
