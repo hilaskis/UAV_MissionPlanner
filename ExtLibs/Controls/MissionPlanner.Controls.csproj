@@ -220,6 +220,12 @@
     <Compile Include="VerticalProgressBar2.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="BearDir.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BearDir.Designer.cs">
+      <DependentUpon>BearDir.cs</DependentUpon>
+    </Compile>
     <Compile Include="WindDir.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -296,6 +302,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ValuesControl.resx">
       <DependentUpon>ValuesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BearDir.resx">
+      <DependentUpon>BearDir.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WindDir.resx">
       <DependentUpon>WindDir.cs</DependentUpon>

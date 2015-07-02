@@ -110,6 +110,10 @@
             this.tabPagemessages = new System.Windows.Forms.TabPage();
             this.txt_messagebox = new System.Windows.Forms.TextBox();
             this.RDFpage = new System.Windows.Forms.TabPage();
+            this.magLabel = new System.Windows.Forms.Label();
+            this.magLabelText = new System.Windows.Forms.Label();
+            this.PiStatus = new System.Windows.Forms.Label();
+            this.PiStatusLabel = new System.Windows.Forms.Label();
             this.HDG315 = new System.Windows.Forms.Label();
             this.HDG270 = new System.Windows.Forms.Label();
             this.HDG225 = new System.Windows.Forms.Label();
@@ -165,8 +169,6 @@
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Messagetabtimer = new System.Windows.Forms.Timer(this.components);
             this.bindingSourceStatusTab = new System.Windows.Forms.BindingSource(this.components);
-            this.PiStatusLabel = new System.Windows.Forms.Label();
-            this.PiStatus = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.MainH)).BeginInit();
             this.MainH.Panel1.SuspendLayout();
             this.MainH.Panel2.SuspendLayout();
@@ -1516,6 +1518,8 @@
             // 
             // RDFpage
             // 
+            this.RDFpage.Controls.Add(this.magLabel);
+            this.RDFpage.Controls.Add(this.magLabelText);
             this.RDFpage.Controls.Add(this.PiStatus);
             this.RDFpage.Controls.Add(this.PiStatusLabel);
             this.RDFpage.Controls.Add(this.HDG315);
@@ -1537,6 +1541,27 @@
             this.RDFpage.Name = "RDFpage";
             this.RDFpage.UseVisualStyleBackColor = true;
             this.RDFpage.Click += new System.EventHandler(this.RDFpage_Click);
+            // 
+            // magLabel
+            // 
+            resources.ApplyResources(this.magLabel, "magLabel");
+            this.magLabel.Name = "magLabel";
+            // 
+            // magLabelText
+            // 
+            resources.ApplyResources(this.magLabelText, "magLabelText");
+            this.magLabelText.Name = "magLabelText";
+            // 
+            // PiStatus
+            // 
+            resources.ApplyResources(this.PiStatus, "PiStatus");
+            this.PiStatus.ForeColor = System.Drawing.Color.Red;
+            this.PiStatus.Name = "PiStatus";
+            // 
+            // PiStatusLabel
+            // 
+            resources.ApplyResources(this.PiStatusLabel, "PiStatusLabel");
+            this.PiStatusLabel.Name = "PiStatusLabel";
             // 
             // HDG315
             // 
@@ -1589,7 +1614,7 @@
             // bearDir1
             // 
             this.bearDir1.BackColor = System.Drawing.Color.Transparent;
-            this.bearDir1.Direction = 180D;
+            this.bearDir1.Direction = 360D;
             resources.ApplyResources(this.bearDir1, "bearDir1");
             this.bearDir1.Name = "bearDir1";
             this.bearDir1.Speed = 0D;
@@ -1768,7 +1793,7 @@
             this.windDir1.BackColor = System.Drawing.Color.Transparent;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 180D;
+            this.windDir1.Direction = 360D;
             resources.ApplyResources(this.windDir1, "windDir1");
             this.windDir1.Name = "windDir1";
             this.windDir1.Speed = 0D;
@@ -1976,17 +2001,6 @@
             // bindingSourceStatusTab
             // 
             this.bindingSourceStatusTab.DataSource = typeof(MissionPlanner.CurrentState);
-            // 
-            // PiStatusLabel
-            // 
-            resources.ApplyResources(this.PiStatusLabel, "PiStatusLabel");
-            this.PiStatusLabel.Name = "PiStatusLabel";
-            // 
-            // PiStatus
-            // 
-            resources.ApplyResources(this.PiStatus, "PiStatus");
-            this.PiStatus.ForeColor = System.Drawing.Color.Red;
-            this.PiStatus.Name = "PiStatus";
             // 
             // FlightData
             // 
@@ -2210,6 +2224,8 @@
         public System.Windows.Forms.TabPage RDFpage;
         private System.Windows.Forms.Label PiStatus;
         private System.Windows.Forms.Label PiStatusLabel;
+        public System.Windows.Forms.Label magLabel;
+        private System.Windows.Forms.Label magLabelText;
 
     }
 }

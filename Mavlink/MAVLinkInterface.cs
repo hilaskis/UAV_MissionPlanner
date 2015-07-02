@@ -3492,8 +3492,9 @@ Please check the following
             // Get the direction of the received signal out of the packet.
             var bearingPkt = buffer.ByteArrayToStructure<mavlink_pi_packet_t>(6);
 
-            // Update the bearing in the absBearing instance.
+            // Update the bearing and magnitude in the absBearing instance.
             absBearing.setBearing(bearingPkt.angle);
+            absBearing.setMag(bearingPkt.magnitude);
 
             // If the call has been subscribed too then it will execute.
             if (call != null) 
