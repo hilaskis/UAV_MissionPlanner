@@ -577,7 +577,7 @@
     <value>modifyandSetSpeed</value>
   </data>
   <data name="&gt;&gt;modifyandSetSpeed.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ModifyandSet, MissionPlanner, Version=1.1.5641.17653, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ModifyandSet, MissionPlanner, Version=1.1.5661.16415, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;modifyandSetSpeed.Parent" xml:space="preserve">
     <value>tabActions</value>
@@ -598,7 +598,7 @@
     <value>modifyandSetAlt</value>
   </data>
   <data name="&gt;&gt;modifyandSetAlt.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ModifyandSet, MissionPlanner, Version=1.1.5641.17653, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ModifyandSet, MissionPlanner, Version=1.1.5661.16415, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;modifyandSetAlt.Parent" xml:space="preserve">
     <value>tabActions</value>
@@ -1372,7 +1372,7 @@
     <value>servoOptions1</value>
   </data>
   <data name="&gt;&gt;servoOptions1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5641.17653, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5661.16415, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions1.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1393,7 +1393,7 @@
     <value>servoOptions2</value>
   </data>
   <data name="&gt;&gt;servoOptions2.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5641.17653, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5661.16415, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions2.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1414,7 +1414,7 @@
     <value>servoOptions3</value>
   </data>
   <data name="&gt;&gt;servoOptions3.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5641.17653, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5661.16415, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions3.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1435,7 +1435,7 @@
     <value>servoOptions4</value>
   </data>
   <data name="&gt;&gt;servoOptions4.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5641.17653, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5661.16415, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions4.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1456,7 +1456,7 @@
     <value>servoOptions5</value>
   </data>
   <data name="&gt;&gt;servoOptions5.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5641.17653, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5661.16415, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions5.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1477,7 +1477,7 @@
     <value>servoOptions6</value>
   </data>
   <data name="&gt;&gt;servoOptions6.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5641.17653, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5661.16415, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions6.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1498,7 +1498,7 @@
     <value>servoOptions7</value>
   </data>
   <data name="&gt;&gt;servoOptions7.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5641.17653, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5661.16415, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions7.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -2544,32 +2544,389 @@
   <data name="&gt;&gt;tabPagemessages.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="signalDir.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  <data name="magLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="signalDir.Location" type="System.Drawing.Point, System.Drawing">
-    <value>189, 38</value>
+  <data name="magLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="signalDir.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 144</value>
+  <data name="magLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>227, 172</value>
   </data>
-  <data name="signalDir.TabIndex" type="System.Int32, mscorlib">
-    <value>92</value>
+  <data name="magLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 13</value>
   </data>
-  <data name="signalDir.ToolTip" xml:space="preserve">
-    <value>This shows the absolute bearing of the signal.</value>
+  <data name="magLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>105</value>
   </data>
-  <data name="&gt;&gt;signalDir.Name" xml:space="preserve">
-    <value>signalDir</value>
+  <data name="magLabel.Text" xml:space="preserve">
+    <value>N/A</value>
   </data>
-  <data name="&gt;&gt;signalDir.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.WindDir, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="&gt;&gt;magLabel.Name" xml:space="preserve">
+    <value>magLabel</value>
   </data>
-  <data name="&gt;&gt;signalDir.Parent" xml:space="preserve">
+  <data name="&gt;&gt;magLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;magLabel.Parent" xml:space="preserve">
     <value>RDFpage</value>
   </data>
-  <data name="&gt;&gt;signalDir.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;magLabel.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="magLabelText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="magLabelText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="magLabelText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 172</value>
+  </data>
+  <data name="magLabelText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 13</value>
+  </data>
+  <data name="magLabelText.TabIndex" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="magLabelText.Text" xml:space="preserve">
+    <value>RSSI (dB): </value>
+  </data>
+  <data name="&gt;&gt;magLabelText.Name" xml:space="preserve">
+    <value>magLabelText</value>
+  </data>
+  <data name="&gt;&gt;magLabelText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;magLabelText.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;magLabelText.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="PiStatus.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PiStatus.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PiStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>321, 23</value>
+  </data>
+  <data name="PiStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 13</value>
+  </data>
+  <data name="PiStatus.TabIndex" type="System.Int32, mscorlib">
+    <value>103</value>
+  </data>
+  <data name="PiStatus.Text" xml:space="preserve">
+    <value>Not Connected</value>
+  </data>
+  <data name="&gt;&gt;PiStatus.Name" xml:space="preserve">
+    <value>PiStatus</value>
+  </data>
+  <data name="&gt;&gt;PiStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PiStatus.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;PiStatus.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="PiStatusLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PiStatusLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PiStatusLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>321, 3</value>
+  </data>
+  <data name="PiStatusLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 13</value>
+  </data>
+  <data name="PiStatusLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>102</value>
+  </data>
+  <data name="PiStatusLabel.Text" xml:space="preserve">
+    <value>RaspberryPi Status:</value>
+  </data>
+  <data name="&gt;&gt;PiStatusLabel.Name" xml:space="preserve">
+    <value>PiStatusLabel</value>
+  </data>
+  <data name="&gt;&gt;PiStatusLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PiStatusLabel.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;PiStatusLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="HDG315.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="HDG315.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="HDG315.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 23</value>
+  </data>
+  <data name="HDG315.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 13</value>
+  </data>
+  <data name="HDG315.TabIndex" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="HDG315.Text" xml:space="preserve">
+    <value>315</value>
+  </data>
+  <data name="&gt;&gt;HDG315.Name" xml:space="preserve">
+    <value>HDG315</value>
+  </data>
+  <data name="&gt;&gt;HDG315.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HDG315.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;HDG315.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="HDG270.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="HDG270.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="HDG270.Location" type="System.Drawing.Point, System.Drawing">
+    <value>114, 80</value>
+  </data>
+  <data name="HDG270.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 13</value>
+  </data>
+  <data name="HDG270.TabIndex" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="HDG270.Text" xml:space="preserve">
+    <value>270</value>
+  </data>
+  <data name="&gt;&gt;HDG270.Name" xml:space="preserve">
+    <value>HDG270</value>
+  </data>
+  <data name="&gt;&gt;HDG270.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HDG270.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;HDG270.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="HDG225.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="HDG225.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="HDG225.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 140</value>
+  </data>
+  <data name="HDG225.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 13</value>
+  </data>
+  <data name="HDG225.TabIndex" type="System.Int32, mscorlib">
+    <value>99</value>
+  </data>
+  <data name="HDG225.Text" xml:space="preserve">
+    <value>225</value>
+  </data>
+  <data name="&gt;&gt;HDG225.Name" xml:space="preserve">
+    <value>HDG225</value>
+  </data>
+  <data name="&gt;&gt;HDG225.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HDG225.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;HDG225.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="HDG180.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="HDG180.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="HDG180.Location" type="System.Drawing.Point, System.Drawing">
+    <value>202, 158</value>
+  </data>
+  <data name="HDG180.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 13</value>
+  </data>
+  <data name="HDG180.TabIndex" type="System.Int32, mscorlib">
+    <value>98</value>
+  </data>
+  <data name="HDG180.Text" xml:space="preserve">
+    <value>180</value>
+  </data>
+  <data name="&gt;&gt;HDG180.Name" xml:space="preserve">
+    <value>HDG180</value>
+  </data>
+  <data name="&gt;&gt;HDG180.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HDG180.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;HDG180.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="HDG135.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="HDG135.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="HDG135.Location" type="System.Drawing.Point, System.Drawing">
+    <value>268, 140</value>
+  </data>
+  <data name="HDG135.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 13</value>
+  </data>
+  <data name="HDG135.TabIndex" type="System.Int32, mscorlib">
+    <value>97</value>
+  </data>
+  <data name="HDG135.Text" xml:space="preserve">
+    <value>135</value>
+  </data>
+  <data name="&gt;&gt;HDG135.Name" xml:space="preserve">
+    <value>HDG135</value>
+  </data>
+  <data name="&gt;&gt;HDG135.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HDG135.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;HDG135.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="HDG45.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="HDG45.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="HDG45.Location" type="System.Drawing.Point, System.Drawing">
+    <value>268, 23</value>
+  </data>
+  <data name="HDG45.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 13</value>
+  </data>
+  <data name="HDG45.TabIndex" type="System.Int32, mscorlib">
+    <value>96</value>
+  </data>
+  <data name="HDG45.Text" xml:space="preserve">
+    <value>045</value>
+  </data>
+  <data name="&gt;&gt;HDG45.Name" xml:space="preserve">
+    <value>HDG45</value>
+  </data>
+  <data name="&gt;&gt;HDG45.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HDG45.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;HDG45.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="HDG360.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="HDG360.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="HDG360.Location" type="System.Drawing.Point, System.Drawing">
+    <value>202, 3</value>
+  </data>
+  <data name="HDG360.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 13</value>
+  </data>
+  <data name="HDG360.TabIndex" type="System.Int32, mscorlib">
+    <value>95</value>
+  </data>
+  <data name="HDG360.Text" xml:space="preserve">
+    <value>360</value>
+  </data>
+  <data name="&gt;&gt;HDG360.Name" xml:space="preserve">
+    <value>HDG360</value>
+  </data>
+  <data name="&gt;&gt;HDG360.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HDG360.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;HDG360.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="HDG90.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="HDG90.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="HDG90.Location" type="System.Drawing.Point, System.Drawing">
+    <value>289, 80</value>
+  </data>
+  <data name="HDG90.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 13</value>
+  </data>
+  <data name="HDG90.TabIndex" type="System.Int32, mscorlib">
+    <value>94</value>
+  </data>
+  <data name="HDG90.Text" xml:space="preserve">
+    <value>090</value>
+  </data>
+  <data name="&gt;&gt;HDG90.Name" xml:space="preserve">
+    <value>HDG90</value>
+  </data>
+  <data name="&gt;&gt;HDG90.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HDG90.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;HDG90.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="bearDir1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="bearDir1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 15</value>
+  </data>
+  <data name="bearDir1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 144</value>
+  </data>
+  <data name="bearDir1.TabIndex" type="System.Int32, mscorlib">
+    <value>93</value>
+  </data>
+  <data name="&gt;&gt;bearDir1.Name" xml:space="preserve">
+    <value>bearDir1</value>
+  </data>
+  <data name="&gt;&gt;bearDir1.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.BearDir, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bearDir1.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;bearDir1.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
   <data name="absBearingValue.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2578,7 +2935,7 @@
     <value>NoControl</value>
   </data>
   <data name="absBearingValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>282, 3</value>
+    <value>16, 26</value>
   </data>
   <data name="absBearingValue.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 13</value>
@@ -2599,7 +2956,7 @@
     <value>RDFpage</value>
   </data>
   <data name="&gt;&gt;absBearingValue.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>13</value>
   </data>
   <data name="absBearingMsg.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2608,7 +2965,7 @@
     <value>NoControl</value>
   </data>
   <data name="absBearingMsg.Location" type="System.Drawing.Point, System.Drawing">
-    <value>186, 3</value>
+    <value>0, 3</value>
   </data>
   <data name="absBearingMsg.Size" type="System.Drawing.Size, System.Drawing">
     <value>90, 13</value>
@@ -2629,7 +2986,7 @@
     <value>RDFpage</value>
   </data>
   <data name="&gt;&gt;absBearingMsg.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>14</value>
   </data>
   <data name="freqActive.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2638,7 +2995,7 @@
     <value>NoControl</value>
   </data>
   <data name="freqActive.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 26</value>
+    <value>25, 83</value>
   </data>
   <data name="freqActive.Size" type="System.Drawing.Size, System.Drawing">
     <value>33, 13</value>
@@ -2659,7 +3016,7 @@
     <value>RDFpage</value>
   </data>
   <data name="&gt;&gt;freqActive.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>15</value>
   </data>
   <data name="freqLabelMSG.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2668,7 +3025,7 @@
     <value>NoControl</value>
   </data>
   <data name="freqLabelMSG.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 3</value>
+    <value>-2, 61</value>
   </data>
   <data name="freqLabelMSG.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 13</value>
@@ -2689,10 +3046,10 @@
     <value>RDFpage</value>
   </data>
   <data name="&gt;&gt;freqLabelMSG.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>16</value>
   </data>
   <data name="freqBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 120</value>
+    <value>3, 140</value>
   </data>
   <data name="freqBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 20</value>
@@ -2716,13 +3073,13 @@
     <value>RDFpage</value>
   </data>
   <data name="&gt;&gt;freqBox.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>17</value>
   </data>
   <data name="BUTsetnewfrequency.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="BUTsetnewfrequency.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 91</value>
+    <value>3, 108</value>
   </data>
   <data name="BUTsetnewfrequency.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 23</value>
@@ -2746,7 +3103,7 @@
     <value>RDFpage</value>
   </data>
   <data name="&gt;&gt;BUTsetnewfrequency.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>18</value>
   </data>
   <data name="RDFpage.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
@@ -2887,7 +3244,7 @@
     <value>zg1</value>
   </data>
   <data name="&gt;&gt;zg1.Type" xml:space="preserve">
-    <value>ZedGraph.ZedGraphControl, ZedGraph, Version=5.1.5.17610, Culture=neutral, PublicKeyToken=null</value>
+    <value>ZedGraph.ZedGraphControl, ZedGraph, Version=5.1.5.15662, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;zg1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel1</value>
@@ -2979,6 +3336,36 @@
   <data name="&gt;&gt;contextMenuStripMap.Type" xml:space="preserve">
     <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 8</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 13</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>77</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="distanceBar1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
@@ -2995,13 +3382,13 @@
     <value>distanceBar1</value>
   </data>
   <data name="&gt;&gt;distanceBar1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.DistanceBar, MissionPlanner, Version=1.1.5641.17653, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.DistanceBar, MissionPlanner, Version=1.1.5661.16415, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;distanceBar1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;distanceBar1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <metadata name="bindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>307, 17</value>
@@ -3028,7 +3415,7 @@
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;windDir1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="label6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -3061,7 +3448,7 @@
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="label5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -3094,7 +3481,7 @@
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="label3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -3127,7 +3514,7 @@
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="label4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -3160,7 +3547,7 @@
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="lbl_hdop.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -3193,7 +3580,7 @@
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;lbl_hdop.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="lbl_sats.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -3226,7 +3613,7 @@
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;lbl_sats.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="gMapControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -3253,7 +3640,7 @@
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;gMapControl1.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="TRK_zoom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Right</value>
@@ -3283,7 +3670,7 @@
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;TRK_zoom.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="&gt;&gt;splitContainer1.Panel2.Name" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
@@ -3592,7 +3979,7 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>25</value>
+    <value>113</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>

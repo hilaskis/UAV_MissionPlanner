@@ -110,7 +110,19 @@
             this.tabPagemessages = new System.Windows.Forms.TabPage();
             this.txt_messagebox = new System.Windows.Forms.TextBox();
             this.RDFpage = new System.Windows.Forms.TabPage();
-            this.signalDir = new MissionPlanner.Controls.WindDir();
+            this.magLabel = new System.Windows.Forms.Label();
+            this.magLabelText = new System.Windows.Forms.Label();
+            this.PiStatus = new System.Windows.Forms.Label();
+            this.PiStatusLabel = new System.Windows.Forms.Label();
+            this.HDG315 = new System.Windows.Forms.Label();
+            this.HDG270 = new System.Windows.Forms.Label();
+            this.HDG225 = new System.Windows.Forms.Label();
+            this.HDG180 = new System.Windows.Forms.Label();
+            this.HDG135 = new System.Windows.Forms.Label();
+            this.HDG45 = new System.Windows.Forms.Label();
+            this.HDG360 = new System.Windows.Forms.Label();
+            this.HDG90 = new System.Windows.Forms.Label();
+            this.bearDir1 = new MissionPlanner.Controls.BearDir();
             this.absBearingValue = new System.Windows.Forms.Label();
             this.absBearingMsg = new System.Windows.Forms.Label();
             this.freqActive = new System.Windows.Forms.Label();
@@ -131,6 +143,7 @@
             this.flightPlannerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setHomeHereToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.takeOffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label7 = new System.Windows.Forms.Label();
             this.distanceBar1 = new MissionPlanner.Controls.DistanceBar();
             this.windDir1 = new MissionPlanner.Controls.WindDir();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
@@ -1505,7 +1518,19 @@
             // 
             // RDFpage
             // 
-            this.RDFpage.Controls.Add(this.signalDir);
+            this.RDFpage.Controls.Add(this.magLabel);
+            this.RDFpage.Controls.Add(this.magLabelText);
+            this.RDFpage.Controls.Add(this.PiStatus);
+            this.RDFpage.Controls.Add(this.PiStatusLabel);
+            this.RDFpage.Controls.Add(this.HDG315);
+            this.RDFpage.Controls.Add(this.HDG270);
+            this.RDFpage.Controls.Add(this.HDG225);
+            this.RDFpage.Controls.Add(this.HDG180);
+            this.RDFpage.Controls.Add(this.HDG135);
+            this.RDFpage.Controls.Add(this.HDG45);
+            this.RDFpage.Controls.Add(this.HDG360);
+            this.RDFpage.Controls.Add(this.HDG90);
+            this.RDFpage.Controls.Add(this.bearDir1);
             this.RDFpage.Controls.Add(this.absBearingValue);
             this.RDFpage.Controls.Add(this.absBearingMsg);
             this.RDFpage.Controls.Add(this.freqActive);
@@ -1517,14 +1542,82 @@
             this.RDFpage.UseVisualStyleBackColor = true;
             this.RDFpage.Click += new System.EventHandler(this.RDFpage_Click);
             // 
-            // signalDir
+            // magLabel
             // 
-            this.signalDir.BackColor = System.Drawing.Color.Transparent;
-            this.signalDir.Direction = 360D;
-            resources.ApplyResources(this.signalDir, "signalDir");
-            this.signalDir.Name = "signalDir";
-            this.signalDir.Speed = 0D;
-            this.toolTip1.SetToolTip(this.signalDir, resources.GetString("signalDir.ToolTip"));
+            resources.ApplyResources(this.magLabel, "magLabel");
+            this.magLabel.Name = "magLabel";
+            // 
+            // magLabelText
+            // 
+            resources.ApplyResources(this.magLabelText, "magLabelText");
+            this.magLabelText.Name = "magLabelText";
+            // 
+            // PiStatus
+            // 
+            resources.ApplyResources(this.PiStatus, "PiStatus");
+            this.PiStatus.ForeColor = System.Drawing.Color.Red;
+            this.PiStatus.Name = "PiStatus";
+            // 
+            // PiStatusLabel
+            // 
+            resources.ApplyResources(this.PiStatusLabel, "PiStatusLabel");
+            this.PiStatusLabel.Name = "PiStatusLabel";
+            // 
+            // HDG315
+            // 
+            resources.ApplyResources(this.HDG315, "HDG315");
+            this.HDG315.ForeColor = System.Drawing.Color.Red;
+            this.HDG315.Name = "HDG315";
+            // 
+            // HDG270
+            // 
+            resources.ApplyResources(this.HDG270, "HDG270");
+            this.HDG270.ForeColor = System.Drawing.Color.Red;
+            this.HDG270.Name = "HDG270";
+            // 
+            // HDG225
+            // 
+            resources.ApplyResources(this.HDG225, "HDG225");
+            this.HDG225.ForeColor = System.Drawing.Color.Red;
+            this.HDG225.Name = "HDG225";
+            // 
+            // HDG180
+            // 
+            resources.ApplyResources(this.HDG180, "HDG180");
+            this.HDG180.ForeColor = System.Drawing.Color.Red;
+            this.HDG180.Name = "HDG180";
+            // 
+            // HDG135
+            // 
+            resources.ApplyResources(this.HDG135, "HDG135");
+            this.HDG135.ForeColor = System.Drawing.Color.Red;
+            this.HDG135.Name = "HDG135";
+            // 
+            // HDG45
+            // 
+            resources.ApplyResources(this.HDG45, "HDG45");
+            this.HDG45.ForeColor = System.Drawing.Color.Red;
+            this.HDG45.Name = "HDG45";
+            // 
+            // HDG360
+            // 
+            resources.ApplyResources(this.HDG360, "HDG360");
+            this.HDG360.ForeColor = System.Drawing.Color.Red;
+            this.HDG360.Name = "HDG360";
+            // 
+            // HDG90
+            // 
+            resources.ApplyResources(this.HDG90, "HDG90");
+            this.HDG90.ForeColor = System.Drawing.Color.Red;
+            this.HDG90.Name = "HDG90";
+            // 
+            // bearDir1
+            // 
+            this.bearDir1.BackColor = System.Drawing.Color.Transparent;
+            this.bearDir1.Direction = 360D;
+            resources.ApplyResources(this.bearDir1, "bearDir1");
+            this.bearDir1.Name = "bearDir1";
+            this.bearDir1.Speed = 0D;
             // 
             // absBearingValue
             // 
@@ -1580,6 +1673,7 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.ContextMenuStrip = this.contextMenuStripMap;
+            this.splitContainer1.Panel2.Controls.Add(this.label7);
             this.splitContainer1.Panel2.Controls.Add(this.distanceBar1);
             this.splitContainer1.Panel2.Controls.Add(this.windDir1);
             this.splitContainer1.Panel2.Controls.Add(this.label6);
@@ -1681,6 +1775,11 @@
             resources.ApplyResources(this.takeOffToolStripMenuItem, "takeOffToolStripMenuItem");
             this.takeOffToolStripMenuItem.Click += new System.EventHandler(this.takeOffToolStripMenuItem_Click);
             // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.Name = "label7";
+            // 
             // distanceBar1
             // 
             resources.ApplyResources(this.distanceBar1, "distanceBar1");
@@ -1694,7 +1793,7 @@
             this.windDir1.BackColor = System.Drawing.Color.Transparent;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 180D;
+            this.windDir1.Direction = 360D;
             resources.ApplyResources(this.windDir1, "windDir1");
             this.windDir1.Name = "windDir1";
             this.windDir1.Speed = 0D;
@@ -2106,14 +2205,27 @@
         private Controls.DistanceBar distanceBar1;
         private Controls.MyButton but_autotune;
         private System.Windows.Forms.ToolStripMenuItem takeOffToolStripMenuItem;
-        private System.Windows.Forms.TabPage RDFpage;
         private Controls.MyButton BUTsetnewfrequency;
         private System.Windows.Forms.TextBox freqBox;
         private System.Windows.Forms.Label freqActive;
         private System.Windows.Forms.Label freqLabelMSG;
         private System.Windows.Forms.Label absBearingValue;
         private System.Windows.Forms.Label absBearingMsg;
-        private Controls.WindDir signalDir;
+        private Controls.BearDir bearDir1;
+        private System.Windows.Forms.Label HDG315;
+        private System.Windows.Forms.Label HDG270;
+        private System.Windows.Forms.Label HDG225;
+        private System.Windows.Forms.Label HDG180;
+        private System.Windows.Forms.Label HDG135;
+        private System.Windows.Forms.Label HDG45;
+        private System.Windows.Forms.Label HDG360;
+        private System.Windows.Forms.Label HDG90;
+        private System.Windows.Forms.Label label7;
+        public System.Windows.Forms.TabPage RDFpage;
+        private System.Windows.Forms.Label PiStatus;
+        private System.Windows.Forms.Label PiStatusLabel;
+        public System.Windows.Forms.Label magLabel;
+        private System.Windows.Forms.Label magLabelText;
 
     }
 }

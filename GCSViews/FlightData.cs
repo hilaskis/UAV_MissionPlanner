@@ -3367,9 +3367,14 @@ namespace MissionPlanner.GCSViews
         public void updateABSBearing()
         {
             double newBearing = absBearing.getBearing();
-            signalDir.Speed = 10;
+            double newMagnitude = absBearing.getMag();
+            /*signalDir.Speed = 10;
             signalDir.Direction = 180 + newBearing;
-            signalDir.Update();
+            signalDir.Update();*/
+            bearDir1.Speed = 10;
+            bearDir1.Direction = 180 + newBearing;
+            bearDir1.Update();
+            magLabel.Text = newMagnitude.ToString();
             absBearingValue.Text = newBearing.ToString();
         }
 
