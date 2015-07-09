@@ -3506,10 +3506,11 @@ Please check the following
         /// <summary>
         /// Sends the frequency of the collar to detect to the PixHawk. 
         /// </summary>
-        public void SendFrequency(float freq)
+        public void SendFrequency(float freq, byte sysId)
         {
             MAVLink.mavlink_tuned_frequency_t change = new MAVLink.mavlink_tuned_frequency_t();
             change.frequency = freq;
+			change.target_system = sysId;
 
             generatePacket((byte)MAVLINK_MSG_ID.TUNED_FREQUENCY, change);
             

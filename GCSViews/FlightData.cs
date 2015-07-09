@@ -3351,7 +3351,8 @@ namespace MissionPlanner.GCSViews
                 float freq = Convert.ToSingle(freqBox.Text);
 
                 // Calls the function that makes the packet.
-                MainV2.comPort.SendFrequency(freq);
+				byte sysId = MainV2.comPort.MAV.sysid;
+                MainV2.comPort.SendFrequency(freq, sysId);
 
                 // Set the current frequency text.
                 freqActive.Text = freqBox.Text;
