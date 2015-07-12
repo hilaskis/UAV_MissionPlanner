@@ -3364,6 +3364,12 @@ namespace MissionPlanner.GCSViews
             ((Button)sender).Enabled = true;
         }
 
+        public void BUTstartScanClicked(object sender, EventArgs e)
+        {
+            // Set the mode to circle.
+            MainV2.comPort.setMode("Circle");
+        }
+
         public void updateABSBearing()
         {
             double newBearing = absBearing.getBearing();
@@ -3390,6 +3396,8 @@ namespace MissionPlanner.GCSViews
         {
 
         }
+
+
 
     }
 }
