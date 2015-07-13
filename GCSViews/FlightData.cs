@@ -3366,8 +3366,10 @@ namespace MissionPlanner.GCSViews
 
         public void BUTstartScanClicked(object sender, EventArgs e)
         {
+
             // Set the mode to circle.
             MainV2.comPort.setMode("Circle");
+
         }
 
         public void updateABSBearing()
