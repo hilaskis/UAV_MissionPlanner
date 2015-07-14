@@ -113,6 +113,7 @@ namespace MissionPlanner.GCSViews
         //whether or not the output console has already started
         bool outputwindowstarted = false;
 
+        System.Timers.Timer scanTimer = new System.Timers.Timer(4000);
 
         private void deleteToolStripMenuItem_Click(object sender, System.EventArgs e)
         {
@@ -3369,8 +3370,36 @@ namespace MissionPlanner.GCSViews
 
             // Set the mode to circle.
             MainV2.comPort.setMode("Circle");
+           
+            // Set the active flag so packets are handled and logged.
+            absBearing.active = true;
+            
+            // Subscribe to the handler and start the timer and keep it running in this thread.
+            scanTimer.Elapsed += scannerTimeout;
+            scanTimer.SynchronizingObject = this;
+            scanTimer.Start();
 
+            // Grey-out the button for scanning suring the scan.
+            startScanBtn.Enabled = false;
+            startScanBtn.Update();
+
+            // Make sure garbage collector does not take te timer.
+            GC.KeepAlive(scanTimer);
+            
         }
+
+        private void scannerTimeout(object sender, EventArgs e)
+        {
+            absBearing.active = false;
+            absBearing.averageBearings();
+            startScanBtn.Enabled = true;
+            startScanBtn.Update();
+        }
+
+       /* private void scanHelper()
+        {
+            Thread timer = new Thread();
+        }*/
 
         public void updateABSBearing()
         {

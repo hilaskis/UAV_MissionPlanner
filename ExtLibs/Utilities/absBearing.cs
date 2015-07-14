@@ -9,13 +9,15 @@ namespace MissionPlanner.Utilities
     {
         // Absolute bearing of the signal.
         public static double bearing;
-
+       
         // Magnitude of the signal.
         public static double mag;
 
         public static double[] xplane;
 
         public static double[] yplane;
+
+        public static bool active;
 
         private static int current;
 
@@ -26,11 +28,10 @@ namespace MissionPlanner.Utilities
         // Constructor, which initializes the members to 0.
         static absBearing()
         {
-            int i;
-
             bearing = 0;
             mag = 0;
             current = 0;
+            active = false;
 
             xplane = new double[10];
             yplane = new double[10];
@@ -129,6 +130,7 @@ namespace MissionPlanner.Utilities
 
             // Now set the result to be the believed bearing.
             bearing = result;
+            current = 0;
 
             // Now at the end we clear the arrays for the next scan.
             clearBearings();
