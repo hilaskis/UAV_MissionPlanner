@@ -128,8 +128,9 @@ namespace MissionPlanner.Utilities
             // Get the angle in radians and convert to degrees.
             result = (Math.Atan2(yAvg, xAvg)) * rad2deg;
 
-            // Now set the result to be the believed bearing.
+            // Now set the bearing and mag to be the believed bearing and mag.
             bearing = result;
+            mag = Math.Sqrt((xAvg * xAvg) + (yAvg * yAvg));
             current = 0;
 
             // Now at the end we clear the arrays for the next scan.

@@ -3341,6 +3341,9 @@ namespace MissionPlanner.GCSViews
             }
         }
 
+        /*
+         * Handler when the user presses the button to set a new frequency.
+         */ 
         private void BUTsetnewfrequency_Click(object sender, EventArgs e)
         {
             try
@@ -3358,13 +3361,15 @@ namespace MissionPlanner.GCSViews
                 // Set the current frequency text.
                 freqActive.Text = freqBox.Text;
 
-                //updateABSBearing();
-
             }
             catch { CustomMessageBox.Show(Strings.CommandFailed, Strings.ERROR); }
             ((Button)sender).Enabled = true;
         }
 
+        /*
+         * Handler function executing when the scan button on the
+         * RDF page is pressed.
+         */ 
         public void BUTstartScanClicked(object sender, EventArgs e)
         {
 
@@ -3383,31 +3388,40 @@ namespace MissionPlanner.GCSViews
             startScanBtn.Enabled = false;
             startScanBtn.Update();
 
-            // Make sure garbage collector does not take te timer.
+            // Make sure garbage collector does not take the timer.
             GC.KeepAlive(scanTimer);
             
         }
 
+        /*
+         * The handler function that occures when the scanTimer
+         * completes.
+         */
         private void scannerTimeout(object sender, EventArgs e)
         {
+            // Stop logging and determine the averaged absolute bearing.
             absBearing.active = false;
             absBearing.averageBearings();
+
+            // Enable the scan button and update the GUI.
             startScanBtn.Enabled = true;
             startScanBtn.Update();
+
+            // Set the aircraft to position-hold when done with the scan.
+            MainV2.comPort.setMode("PosHold");
         }
 
-       /* private void scanHelper()
-        {
-            Thread timer = new Thread();
-        }*/
-
+        /*
+         * Handler function that executes when a new ABSBearing is 
+         * determined.
+         */ 
         public void updateABSBearing()
         {
+            // Gets the bearing and the magnitude.
             double newBearing = absBearing.getBearing();
             double newMagnitude = absBearing.getMag();
-            /*signalDir.Speed = 10;
-            signalDir.Direction = 180 + newBearing;
-            signalDir.Update();*/
+
+            // Set the GUI to display the new bearing and magnitude.
             bearDir1.Speed = 10;
             bearDir1.Direction = 180 + newBearing;
             bearDir1.Update();
@@ -3415,20 +3429,10 @@ namespace MissionPlanner.GCSViews
             absBearingValue.Text = newBearing.ToString();
         }
 
-//        public static Action caller;
-
-        /*public static void updateCaller()
-        {
-            //updateABSBearing(this); 
-            MainV2
-        }*/
-
         private void RDFpage_Click(object sender, EventArgs e)
         {
 
         }
-
-
 
     }
 }
