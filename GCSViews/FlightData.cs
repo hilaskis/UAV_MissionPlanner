@@ -115,6 +115,7 @@ namespace MissionPlanner.GCSViews
 
         System.Timers.Timer scanTimer = new System.Timers.Timer(4000);
 
+
         private void deleteToolStripMenuItem_Click(object sender, System.EventArgs e)
         {
             if (CurrentGMapMarker == null)
@@ -303,6 +304,9 @@ namespace MissionPlanner.GCSViews
                 }
             }
             catch { }
+
+            scanTimer.Elapsed += scannerTimeout;
+            scanTimer.SynchronizingObject = this;
 
             MainV2.comPort.ParamListChanged += FlightData_ParentChanged;
 
@@ -3362,7 +3366,7 @@ namespace MissionPlanner.GCSViews
                 freqActive.Text = freqBox.Text;
 
             }
-            catch { CustomMessageBox.Show(Strings.CommandFailed, Strings.ERROR); }
+            catch { CustomMessageBox.Show("Check input frequency!", Strings.ErrorSettingParameter); }
             ((Button)sender).Enabled = true;
         }
 
@@ -3372,25 +3376,31 @@ namespace MissionPlanner.GCSViews
          */ 
         public void BUTstartScanClicked(object sender, EventArgs e)
         {
+            if (freqActive.Text == "None")
+            {
+                //CustomMessageBox.Show(Strings.CommandFailed, Strings.ErrorSettingParameter);
+                CustomMessageBox.Show("You must enter a frequency!", Strings.ErrorSettingParameter);
+            }
+            else
+            {
+                // Set the mode to circle.
+                MainV2.comPort.setMode("Circle");
 
-            // Set the mode to circle.
-            MainV2.comPort.setMode("Circle");
-           
-            // Set the active flag so packets are handled and logged.
-            absBearing.active = true;
-            
-            // Subscribe to the handler and start the timer and keep it running in this thread.
-            scanTimer.Elapsed += scannerTimeout;
-            scanTimer.SynchronizingObject = this;
-            scanTimer.Start();
+                // Set the active flag so packets are handled and logged.
+                absBearing.active = true;
 
-            // Grey-out the button for scanning suring the scan.
-            startScanBtn.Enabled = false;
-            startScanBtn.Update();
+                // Subscribe to the handler and start the timer and keep it running in this thread.
+                //scanTimer.Elapsed += scannerTimeout;
+                //scanTimer.SynchronizingObject = this;
+                scanTimer.Start();
 
-            // Make sure garbage collector does not take the timer.
-            GC.KeepAlive(scanTimer);
-            
+                // Grey-out the button for scanning suring the scan.
+                startScanBtn.Enabled = false;
+                startScanBtn.Update();
+
+                // Make sure garbage collector does not take the timer.
+                GC.KeepAlive(scanTimer);
+            }
         }
 
         /*
@@ -3399,6 +3409,10 @@ namespace MissionPlanner.GCSViews
          */
         private void scannerTimeout(object sender, EventArgs e)
         {
+            // Must stop the timer or else it will keep going and call
+            // this function every 40 seconds.
+            scanTimer.Stop();
+
             // Stop logging and determine the averaged absolute bearing.
             absBearing.active = false;
             absBearing.averageBearings();
@@ -3409,6 +3423,9 @@ namespace MissionPlanner.GCSViews
 
             // Set the aircraft to position-hold when done with the scan.
             MainV2.comPort.setMode("PosHold");
+
+            // Update the bearing GUI.
+            updateABSBearing();
         }
 
         /*
@@ -3417,16 +3434,27 @@ namespace MissionPlanner.GCSViews
          */ 
         public void updateABSBearing()
         {
-            // Gets the bearing and the magnitude.
-            double newBearing = absBearing.getBearing();
-            double newMagnitude = absBearing.getMag();
+            // Look to see if a signal was found.  If not, update GUI accordingly.
+            if (absBearing.foundSignal == true)
+            {
+                // Gets the bearing and the magnitude.
+                double newBearing = absBearing.getBearing();
+                double newMagnitude = absBearing.getMag();
 
-            // Set the GUI to display the new bearing and magnitude.
-            bearDir1.Speed = 10;
-            bearDir1.Direction = 180 + newBearing;
-            bearDir1.Update();
-            magLabel.Text = newMagnitude.ToString();
-            absBearingValue.Text = newBearing.ToString();
+                // Set the GUI to display the new bearing and magnitude.
+                bearDir1.Speed = 10;
+                bearDir1.Direction = 180 + newBearing;
+                bearDir1.Update();
+                magLabel.Text = newMagnitude.ToString();
+                absBearingValue.Text = newBearing.ToString();
+            }
+            else
+            {
+                bearDir1.Speed = 0;
+                bearDir1.Update();
+                magLabel.Text = "Not Detected";
+                absBearingValue.Text = "Not Detected";
+            }
         }
 
         private void RDFpage_Click(object sender, EventArgs e)
