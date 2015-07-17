@@ -563,6 +563,11 @@ Please check the following
                     i++;
                 }
 
+				if (messageType == 187)
+				{
+					FreqPacketBufferSwap(packet, 7);
+				}
+
                 ushort checksum = MavlinkCRC.crc_calculate(packet, packet[1] + 6);
 
                     checksum = MavlinkCRC.crc_accumulate(MAVLINK_MESSAGE_CRCS[messageType], checksum);
@@ -574,6 +579,9 @@ Please check the following
                 i += 1;
                 packet[i] = ck_b;
                 i += 1;
+
+				
+				
 
                 if (BaseStream.IsOpen)
                 {
@@ -2474,9 +2482,36 @@ Please check the following
             }
 
             // packet is now verified
-
+			//Peform a byte swap for pi packet float data
             byte sysid = buffer[3];
             byte compid = buffer[4];
+			//if(buffer[5] == 188)
+			//{
+				
+				//byte zero, one, two, three;
+				//zero = buffer[7];
+				//one = buffer[8];
+				//two = buffer[9];
+				//three = buffer[10];
+
+				//buffer[7] = three;
+				//buffer[8] = zero;
+				//buffer[9] = one;
+				//buffer[10] = two;
+				//byte[] input = { buffer[10], buffer[7], buffer[8], buffer[9] };
+				//byte[] input2 = { buffer[14], buffer[11], buffer[12], buffer[13] };
+				//float temp = BitConverter.ToSingle(input, 0);
+				//float temp2 = BitConverter.ToSingle(input2, 0);
+				//byte temp = buffer[7];
+				//buffer[7] = buffer[9];
+				//buffer[9] = temp;
+
+				//temp = buffer[11];
+				//buffer[11] = buffer[13];
+				//buffer[13] = temp;
+			//}
+				
+
 
             // update packet loss statistics
             if (!logreadmode && MAVlist[sysid].packetlosttimer.AddSeconds(5) < DateTime.Now)
@@ -2670,6 +2705,8 @@ Please check the following
             // Check if the packet is a absolue brearing packet. 
             if (buffer[5] == 188)
             {
+				PiPacketBufferSwap(buffer, 7);	//Swap bytes for magnitude data
+				PiPacketBufferSwap(buffer, 11);	//Swap bytes for angle data
                 // Get the bearing data out of the packet.
                 GetPhaseOffset(ref buffer);
 
@@ -3495,6 +3532,7 @@ Please check the following
             // Update the bearing and magnitude in the absBearing instance.
             absBearing.setBearing(bearingPkt.angle);
             absBearing.setMag(bearingPkt.magnitude);
+			Console.WriteLine("Angle: {0}\tMagnitude: {1}", bearingPkt.angle, bearingPkt.magnitude);
 
             // If the call has been subscribed too then it will execute.
             if (call != null) 
@@ -3516,5 +3554,49 @@ Please check the following
             generatePacket((byte)MAVLINK_MSG_ID.TUNED_FREQUENCY, change);
             
         }
+
+		/// <summary>
+		/// Used to swap the byte positions of float types sent from Pi/Pixhawk
+		/// </summary>
+		/// <param name="buf"></param>
+		/// <param name="start">Index position in the buffer that indicates start of float bytes</param>
+		public void PiPacketBufferSwap(byte[] buf, int start)
+		{
+			//Prevent out of bounds issue
+			if (buf.Length <= start + 3)
+			{
+				return;
+			}
+			byte zero, one, two, three;
+			zero = buf[start];
+			one = buf[start + 1];
+			two = buf[start + 2];
+			three = buf[start + 3];
+
+			buf[start] = three;
+			buf[start + 1] = zero;
+			buf[start + 2] = one;
+			buf[start + 3] = two;
+		}
+
+		public void FreqPacketBufferSwap(byte[] buf, int start)
+		{
+			//Prevent out of bounds issue
+			if (buf.Length <= start + 3)
+			{
+				return;
+			}
+			byte zero, one, two, three;
+			zero = buf[start];
+			one = buf[start + 1];
+			two = buf[start + 2];
+			three = buf[start + 3];
+
+			buf[start] = one;
+			buf[start + 1] = two;
+			buf[start + 2] = three;
+			buf[start + 3] = zero;
+		}
+
     }
 }
