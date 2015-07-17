@@ -113,7 +113,7 @@ namespace MissionPlanner.GCSViews
         //whether or not the output console has already started
         bool outputwindowstarted = false;
 
-        System.Timers.Timer scanTimer = new System.Timers.Timer(4000);
+        System.Timers.Timer scanTimer = new System.Timers.Timer(47000);
 
 
         private void deleteToolStripMenuItem_Click(object sender, System.EventArgs e)
@@ -3422,7 +3422,7 @@ namespace MissionPlanner.GCSViews
             startScanBtn.Update();
 
             // Set the aircraft to position-hold when done with the scan.
-            MainV2.comPort.setMode("PosHold");
+            MainV2.comPort.setMode("Guided");
 
             // Update the bearing GUI.
             updateABSBearing();
