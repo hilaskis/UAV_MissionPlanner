@@ -113,7 +113,8 @@ namespace MissionPlanner.GCSViews
         //whether or not the output console has already started
         bool outputwindowstarted = false;
 
-        System.Timers.Timer scanTimer = new System.Timers.Timer(47000);
+        //System.Timers.Timer scanTimer = new System.Timers.Timer(47000);
+        System.Timers.Timer scanTimer = new System.Timers.Timer(1000);
 
 
         private void deleteToolStripMenuItem_Click(object sender, System.EventArgs e)
@@ -307,6 +308,7 @@ namespace MissionPlanner.GCSViews
 
             scanTimer.Elapsed += scannerTimeout;
             scanTimer.SynchronizingObject = this;
+            scanTimer.Start();
 
             MainV2.comPort.ParamListChanged += FlightData_ParentChanged;
 
@@ -3377,6 +3379,8 @@ namespace MissionPlanner.GCSViews
          */ 
         public void BUTstartScanClicked(object sender, EventArgs e)
         {
+            /*
+             * COMMENTED OUT IS THE FUNCTION FOR SCANNING BY BUTTON PRESS.
             if (freqActive.Text == "None")
             {
                 //CustomMessageBox.Show(Strings.CommandFailed, Strings.ErrorSettingParameter);
@@ -3386,13 +3390,10 @@ namespace MissionPlanner.GCSViews
             {
                 // Set the mode to circle.
                 MainV2.comPort.setMode("Circle");
-
+                
                 // Set the active flag so packets are handled and logged.
                 absBearing.active = true;
 
-                // Subscribe to the handler and start the timer and keep it running in this thread.
-                //scanTimer.Elapsed += scannerTimeout;
-                //scanTimer.SynchronizingObject = this;
                 scanTimer.Start();
 
                 // Grey-out the button for scanning suring the scan.
@@ -3402,6 +3403,7 @@ namespace MissionPlanner.GCSViews
                 // Make sure garbage collector does not take the timer.
                 GC.KeepAlive(scanTimer);
             }
+            */
         }
 
         /*
@@ -3410,6 +3412,30 @@ namespace MissionPlanner.GCSViews
          */
         private void scannerTimeout(object sender, EventArgs e)
         {
+
+            // This is the start of the scan, so we need to activate it and start the timer.
+            if((MainV2.comPort.MAV.cs.mode.ToUpper() == "CIRCLE") && (absBearing.active == false) && (freqActive.Text != "None"))
+            {
+                absBearing.active = true;
+
+                // Make sure garbage collector does not take the timer.
+                GC.KeepAlive(scanTimer);
+            }
+            // Here we are scanning, so logging is taking place.  Do nothing.
+            else if ((MainV2.comPort.MAV.cs.mode.ToUpper() == "CIRCLE") && (absBearing.active == true) && (freqActive.Text != "None"))
+            {
+
+            }
+            // Scan is stopping here.  Now we shut it off and do processing.
+            else if ((MainV2.comPort.MAV.cs.mode.ToUpper() != "CIRCLE") && (absBearing.active == true) && (freqActive.Text != "None"))
+            {
+                absBearing.active = false;
+                absBearing.averageBearings();
+                updateABSBearing();
+            }
+
+            /*
+             * COMMENTED OUT IS THE FUNCTION FOR SCANNING BY BUTTON PRESS.
             // Must stop the timer or else it will keep going and call
             // this function every 40 seconds.
             scanTimer.Stop();
@@ -3423,10 +3449,11 @@ namespace MissionPlanner.GCSViews
             startScanBtn.Update();
 
             // Set the aircraft to position-hold when done with the scan.
-            MainV2.comPort.setMode("Guided");
+            MainV2.comPort.setMode("Stabilize");
 
             // Update the bearing GUI.
             updateABSBearing();
+            */
         }
 
         /*

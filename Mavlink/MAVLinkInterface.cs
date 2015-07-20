@@ -3535,11 +3535,11 @@ Please check the following
                 //absBearing.setBearing(bearingPkt.angle);
                 //absBearing.setMag(bearingPkt.magnitude);
 
-            // Update the bearing and magnitude in the absBearing instance.
-            absBearing.setBearing(bearingPkt.angle);
-            absBearing.setMag(bearingPkt.magnitude);
-			Console.WriteLine("Angle: {0}\tMagnitude: {1}", bearingPkt.angle, bearingPkt.magnitude);
-            absBearing.logDetectedXY(bearingPkt.angle, bearingPkt.magnitude);
+                // Update the bearing and magnitude in the absBearing instance.
+                absBearing.setBearing(bearingPkt.angle);
+                absBearing.setMag(bearingPkt.magnitude);
+			    Console.WriteLine("Angle: {0}\tMagnitude: {1}", bearingPkt.angle, bearingPkt.magnitude);
+                absBearing.logDetectedXY(bearingPkt.angle, bearingPkt.magnitude);
 
                 // If the call has been subscribed too then it will execute.
                 if (call != null)
