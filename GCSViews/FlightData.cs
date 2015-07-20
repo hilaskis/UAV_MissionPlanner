@@ -3423,7 +3423,7 @@ namespace MissionPlanner.GCSViews
             startScanBtn.Update();
 
             // Set the aircraft to position-hold when done with the scan.
-            MainV2.comPort.setMode("Guided");
+            MainV2.comPort.setMode("Stabilize");
 
             // Update the bearing GUI.
             updateABSBearing();
