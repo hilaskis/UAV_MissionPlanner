@@ -3535,6 +3535,7 @@ Please check the following
                 //absBearing.setBearing(bearingPkt.angle);
                 //absBearing.setMag(bearingPkt.magnitude);
 
+
 				// Update the bearing and magnitude in the absBearing instance.
 				absBearing.setBearing(bearingPkt.angle);
 				absBearing.setMag(bearingPkt.magnitude);
