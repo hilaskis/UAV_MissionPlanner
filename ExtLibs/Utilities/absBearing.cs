@@ -22,6 +22,8 @@ namespace MissionPlanner.Utilities
         // Flag to determine if a scan is in progress.
         public static bool active;
 
+        public static int activeCount;
+
         // Flag to determine is a signal was detected during a scan.
         public static bool foundSignal;
 
@@ -44,6 +46,7 @@ namespace MissionPlanner.Utilities
             current = 0;
             active = false;
             foundSignal = false;
+            activeCount = 0;
 
             xplane = new double[100];
             yplane = new double[100];
