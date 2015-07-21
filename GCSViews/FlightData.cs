@@ -3381,7 +3381,7 @@ namespace MissionPlanner.GCSViews
         {
 
             // This is the start of the scan, so we need to activate it and start the timer.
-            if((MainV2.comPort.MAV.cs.mode.ToUpper() == "CIRCLE") && (absBearing.active == false) && (freqActive.Text != "None"))
+            if ((MainV2.comPort.MAV.cs.mode.ToUpper() == "CIRCLE") && (absBearing.active == false) && (freqActive.Text != "None") && (absBearing.current < 100))
             {
                 absBearing.active = true;
 
@@ -3391,10 +3391,15 @@ namespace MissionPlanner.GCSViews
                 scanDisplayTime.Text = "Inactive";
             }
             // Here we are scanning, so logging is taking place.  Do nothing.
-            else if ((MainV2.comPort.MAV.cs.mode.ToUpper() == "CIRCLE") && (absBearing.active == true) && (freqActive.Text != "None"))
+            else if ((MainV2.comPort.MAV.cs.mode.ToUpper() == "CIRCLE") && (absBearing.active == true) && (freqActive.Text != "None") && (absBearing.current < 100))
             {
                 absBearing.activeCount++;
+                absBearing.current++;
                 scanDisplayTime.Text = absBearing.activeCount.ToString();
+            }
+            else if((MainV2.comPort.MAV.cs.mode.ToUpper() == "CIRCLE") && (absBearing.active == true) && (freqActive.Text != "None") && (absBearing.current >= 100))
+            {
+                scanDisplayTime.Text = "Stop Scan";
             }
             // Scan is stopping here.  Now we shut it off and do processing.
             else if ((MainV2.comPort.MAV.cs.mode.ToUpper() != "CIRCLE") && (absBearing.active == true) && (freqActive.Text != "None"))
