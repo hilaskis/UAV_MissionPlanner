@@ -3339,7 +3339,7 @@ namespace MissionPlanner.GCSViews
             {
                 flyToHereAltToolStripMenuItem_Click(null, null);
 
-                MainV2.comPort.setMode("GUIDED");
+                MainV2.comPort.setMode("Loiter");
 
                 MainV2.comPort.doCommand(MAVLink.MAV_CMD.TAKEOFF, 0, 0, 0, 0, 0, 0, MainV2.comPort.MAV.GuidedMode.z);
             }
