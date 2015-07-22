@@ -113,7 +113,8 @@ namespace MissionPlanner.GCSViews
         //whether or not the output console has already started
         bool outputwindowstarted = false;
 
-        System.Timers.Timer scanTimer = new System.Timers.Timer(47000);
+        //System.Timers.Timer scanTimer = new System.Timers.Timer(47000);
+        System.Timers.Timer scanTimer = new System.Timers.Timer(1000);
 
 
         private void deleteToolStripMenuItem_Click(object sender, System.EventArgs e)
@@ -307,6 +308,7 @@ namespace MissionPlanner.GCSViews
 
             scanTimer.Elapsed += scannerTimeout;
             scanTimer.SynchronizingObject = this;
+            scanTimer.Start();
 
             MainV2.comPort.ParamListChanged += FlightData_ParentChanged;
 
@@ -3372,61 +3374,47 @@ namespace MissionPlanner.GCSViews
         }
 
         /*
-         * Handler function executing when the scan button on the
-         * RDF page is pressed.
-         */ 
-        public void BUTstartScanClicked(object sender, EventArgs e)
-        {
-            if (freqActive.Text == "None")
-            {
-                //CustomMessageBox.Show(Strings.CommandFailed, Strings.ErrorSettingParameter);
-                CustomMessageBox.Show("You must enter a frequency!", Strings.ErrorSettingParameter);
-            }
-            else
-            {
-                // Set the mode to circle.
-                MainV2.comPort.setMode("Circle");
-
-                // Set the active flag so packets are handled and logged.
-                absBearing.active = true;
-
-                // Subscribe to the handler and start the timer and keep it running in this thread.
-                //scanTimer.Elapsed += scannerTimeout;
-                //scanTimer.SynchronizingObject = this;
-                scanTimer.Start();
-
-                // Grey-out the button for scanning suring the scan.
-                startScanBtn.Enabled = false;
-                startScanBtn.Update();
-
-                // Make sure garbage collector does not take the timer.
-                GC.KeepAlive(scanTimer);
-            }
-        }
-
-        /*
-         * The handler function that occures when the scanTimer
-         * completes.
+         * The handler function for the scannerTimer, which executes every second.  It
+         * moitors the flight mode of the UAV and handles direction finding when in circle mode.
          */
         private void scannerTimeout(object sender, EventArgs e)
         {
-            // Must stop the timer or else it will keep going and call
-            // this function every 40 seconds.
-            scanTimer.Stop();
 
-            // Stop logging and determine the averaged absolute bearing.
-            absBearing.active = false;
-            absBearing.averageBearings();
+            // This is the start of the scan, so we need to activate it and start the timer.
+            if ((MainV2.comPort.MAV.cs.mode.ToUpper() == "CIRCLE") && (absBearing.active == false) && (freqActive.Text != "None") && (absBearing.current < 100))
+            {
+                absBearing.active = true;
 
-            // Enable the scan button and update the GUI.
-            startScanBtn.Enabled = true;
-            startScanBtn.Update();
+                // Make sure garbage collector does not take the timer.
+                GC.KeepAlive(scanTimer);
 
-            // Set the aircraft to position-hold when done with the scan.
-            MainV2.comPort.setMode("Stabilize");
+                scanDisplayTime.Text = "Inactive";
+            }
+            // Here we are scanning, so logging is taking place.  Do nothing.
+            else if ((MainV2.comPort.MAV.cs.mode.ToUpper() == "CIRCLE") && (absBearing.active == true) && (freqActive.Text != "None") && (absBearing.current < 100))
+            {
+                absBearing.activeCount++;
+                absBearing.current++;
+                scanDisplayTime.Text = absBearing.activeCount.ToString();
+            }
+            else if((MainV2.comPort.MAV.cs.mode.ToUpper() == "CIRCLE") && (absBearing.active == true) && (freqActive.Text != "None") && (absBearing.current >= 100))
+            {
+                scanDisplayTime.Text = "Stop Scan";
+            }
+            // Scan is stopping here.  Now we shut it off and do processing.
+            else if ((MainV2.comPort.MAV.cs.mode.ToUpper() != "CIRCLE") && (absBearing.active == true) && (freqActive.Text != "None"))
+            {
+                scanDisplayTime.Text = "Inactive";
+                absBearing.active = false;
+                absBearing.averageBearings();
+                updateABSBearing();
+            }
+            else if((MainV2.comPort.MAV.cs.mode.ToUpper() == "CIRCLE") && (freqActive.Text == "None"))
+            {
+                scanDisplayTime.Text = "Frequency Required!";
+            }
 
-            // Update the bearing GUI.
-            updateABSBearing();
+
         }
 
         /*
