@@ -3394,7 +3394,6 @@ namespace MissionPlanner.GCSViews
             else if ((MainV2.comPort.MAV.cs.mode.ToUpper() == "CIRCLE") && (absBearing.active == true) && (freqActive.Text != "None") && (absBearing.current < 100))
             {
                 absBearing.activeCount++;
-                absBearing.current++;
                 scanDisplayTime.Text = absBearing.activeCount.ToString();
             }
             else if((MainV2.comPort.MAV.cs.mode.ToUpper() == "CIRCLE") && (absBearing.active == true) && (freqActive.Text != "None") && (absBearing.current >= 100))
