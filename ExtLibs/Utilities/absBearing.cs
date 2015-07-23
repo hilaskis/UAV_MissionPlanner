@@ -22,17 +22,23 @@ namespace MissionPlanner.Utilities
         // Flag to determine if a scan is in progress.
         public static bool active;
 
+        // A count of how long the scan has been active - based off of a timer in FlightData.
+        public static int activeCount;
+
         // Flag to determine is a signal was detected during a scan.
         public static bool foundSignal;
 
         // A count of the number of detections made during a scan.
-        private static int current;
+        public static int current;
 
         // Conversion for degrees to radians.
         private static double deg2rad = (Math.PI / 180.0);
 
         // Conversion for radians to degrees.
         private static double rad2deg = (180.0 / Math.PI);
+
+        // Size of the arrays where data is stored for averaging.
+        private static int arraySize = 100;
 
         /* 
          * Constructor, which initializes the members to 0.
@@ -44,9 +50,10 @@ namespace MissionPlanner.Utilities
             current = 0;
             active = false;
             foundSignal = false;
+            activeCount = 0;
 
-            xplane = new double[100];
-            yplane = new double[100];
+            xplane = new double[arraySize];
+            yplane = new double[arraySize];
 
             // Set values in arrays to -1.
             clearBearings();
@@ -91,7 +98,7 @@ namespace MissionPlanner.Utilities
         {
             int i;
 
-            for(i = 0; i < xplane.Length; i++)
+            for (i = 0; i < arraySize; i++)
             {
                 xplane[i] = -1;
                 yplane[i] = -1;
@@ -108,14 +115,17 @@ namespace MissionPlanner.Utilities
             double x;
             double y;
 
-            // Must convert to radians for the trig functions.
-            x = Math.Cos((angle * deg2rad)) * mag;
-            y = Math.Sin((angle * deg2rad)) * mag;
+            if (current <= arraySize)
+            {
+                // Must convert to radians for the trig functions.
+                x = Math.Cos((angle /** deg2rad*/)) * mag;
+                y = Math.Sin((angle /** deg2rad*/)) * mag;
 
-            xplane[current] = x;
-            yplane[current] = y;
+                xplane[current] = x;
+                yplane[current] = y;
 
-            current++;
+                current++;
+            }
         }
 
         /*
@@ -134,8 +144,11 @@ namespace MissionPlanner.Utilities
             // Clear the found flag, which remains cleared unless a signal was detected.
             foundSignal = false;
 
+            activeCount = 0;
+            current = 0;
+
             // Adds all values for X and Y, then breaks when an empty spot is observed.
-            for(i = 0; i < 100; i++)
+            for (i = 0; i < arraySize; i++)
             { 
                 // -1 is empty.  Can break after since they are added in order.
                 if(xplane[i] != -1)
