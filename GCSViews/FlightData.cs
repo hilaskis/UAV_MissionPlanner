@@ -3394,6 +3394,15 @@ namespace MissionPlanner.GCSViews
             else if ((MainV2.comPort.MAV.cs.mode.ToUpper() == "CIRCLE") && (absBearing.active == true) && (freqActive.Text != "None") && (absBearing.current < 100))
             {
                 absBearing.activeCount++;
+                
+                // This portion is for debugging.  It will remain commented out.
+                /*float[] bearTest = {0.20943951F, 0.418879021F, 0.837758041F, 1.047197551F, 1.256637061F, 1.466076572F, 1.675516082F, 1.884955592F, 2.094395102F, 2.303834613F, 2.513274123F, 2.722713633F, 2.932153143F, -2.513274123F, -1.884955592F, -1.256637061F, -0.837758041F, -0.628318531F, -0.418879021F, 0F};
+                float[] magTest = {330.82F, 338.18F, 521.758F, 512.45F, 854.677F, 792.635F, 1117.75F, 842.965F, 1117.75F, 623.023F, 338.18F, 367.015F, 521.758F, 854.677F, 338.18F, 367.015F, 854.677F, 338.18F, 367.015F, 854.677F};
+                if (absBearing.current < 20)
+                {
+                    absBearing.logDetectedXY(bearTest[absBearing.current], magTest[absBearing.current]);
+                }*/
+
                 scanDisplayTime.Text = absBearing.activeCount.ToString();
             }
             else if((MainV2.comPort.MAV.cs.mode.ToUpper() == "CIRCLE") && (absBearing.active == true) && (freqActive.Text != "None") && (absBearing.current >= 100))
@@ -3426,8 +3435,8 @@ namespace MissionPlanner.GCSViews
             if (absBearing.foundSignal == true)
             {
                 // Gets the bearing and the magnitude.
-                double newBearing = absBearing.getBearing();
-                double newMagnitude = absBearing.getMag();
+                double newBearing = Math.Round(absBearing.getBearing(), 2);
+                double newMagnitude = Math.Round(absBearing.getMag(), 2);
 
                 // Set the GUI to display the new bearing and magnitude.
                 bearDir1.Speed = 10;

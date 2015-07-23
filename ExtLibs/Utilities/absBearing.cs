@@ -115,11 +115,11 @@ namespace MissionPlanner.Utilities
             double x;
             double y;
 
-            if (current >= arraySize)
+            if (current <= arraySize)
             {
                 // Must convert to radians for the trig functions.
-                x = Math.Cos((angle * deg2rad)) * mag;
-                y = Math.Sin((angle * deg2rad)) * mag;
+                x = Math.Cos((angle /** deg2rad*/)) * mag;
+                y = Math.Sin((angle /** deg2rad*/)) * mag;
 
                 xplane[current] = x;
                 yplane[current] = y;
