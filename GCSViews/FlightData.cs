@@ -3362,15 +3362,36 @@ namespace MissionPlanner.GCSViews
 
                 // Calls the function that makes the packet.
 				byte sysId = MainV2.comPort.MAV.sysid;
-				MainV2.comPort.SendFrequency(freq, 254);
-				MainV2.comPort.SendRFGain(333, 254);
-                
+				MainV2.comPort.SendFrequency(freq, 254);              
 
                 // Set the current frequency text.
                 freqActive.Text = freqBox.Text;
 
             }
             catch { CustomMessageBox.Show("Check input frequency!", Strings.ErrorSettingParameter); }
+            ((Button)sender).Enabled = true;
+        }
+
+        private void BUTsetnewgain_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Disable button.
+                ((Button)sender).Enabled = false;
+
+                // Get the value entered out of the text box.
+                float gain = Convert.ToSingle(gainBox.Text);
+
+                // Calls the function that makes the packet.
+                byte sysId = MainV2.comPort.MAV.sysid;
+                MainV2.comPort.SendRFGain(gain, 254);
+
+
+                // Set the current frequency text.
+                gainActive.Text = gainBox.Text;
+
+            }
+            catch { CustomMessageBox.Show("Check input gain!", Strings.ErrorSettingParameter); }
             ((Button)sender).Enabled = true;
         }
 

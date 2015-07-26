@@ -110,6 +110,12 @@
             this.tabPagemessages = new System.Windows.Forms.TabPage();
             this.txt_messagebox = new System.Windows.Forms.TextBox();
             this.RDFpage = new System.Windows.Forms.TabPage();
+            this.gainBox = new System.Windows.Forms.TextBox();
+            this.gainActive = new System.Windows.Forms.Label();
+            this.gainLabelMSG = new System.Windows.Forms.Label();
+            this.BUTsetnewgain = new MissionPlanner.Controls.MyButton();
+            this.scanDisplayTime = new System.Windows.Forms.Label();
+            this.scanCount = new System.Windows.Forms.Label();
             this.magLabel = new System.Windows.Forms.Label();
             this.magLabelText = new System.Windows.Forms.Label();
             this.HDG315 = new System.Windows.Forms.Label();
@@ -167,8 +173,6 @@
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Messagetabtimer = new System.Windows.Forms.Timer(this.components);
             this.bindingSourceStatusTab = new System.Windows.Forms.BindingSource(this.components);
-            this.scanCount = new System.Windows.Forms.Label();
-            this.scanDisplayTime = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.MainH)).BeginInit();
             this.MainH.Panel1.SuspendLayout();
             this.MainH.Panel2.SuspendLayout();
@@ -1518,6 +1522,10 @@
             // 
             // RDFpage
             // 
+            this.RDFpage.Controls.Add(this.gainBox);
+            this.RDFpage.Controls.Add(this.gainActive);
+            this.RDFpage.Controls.Add(this.gainLabelMSG);
+            this.RDFpage.Controls.Add(this.BUTsetnewgain);
             this.RDFpage.Controls.Add(this.scanDisplayTime);
             this.RDFpage.Controls.Add(this.scanCount);
             this.RDFpage.Controls.Add(this.magLabel);
@@ -1541,6 +1549,38 @@
             this.RDFpage.Name = "RDFpage";
             this.RDFpage.UseVisualStyleBackColor = true;
             this.RDFpage.Click += new System.EventHandler(this.RDFpage_Click);
+            // 
+            // gainBox
+            // 
+            resources.ApplyResources(this.gainBox, "gainBox");
+            this.gainBox.Name = "gainBox";
+            // 
+            // gainActive
+            // 
+            resources.ApplyResources(this.gainActive, "gainActive");
+            this.gainActive.Name = "gainActive";
+            // 
+            // gainLabelMSG
+            // 
+            resources.ApplyResources(this.gainLabelMSG, "gainLabelMSG");
+            this.gainLabelMSG.Name = "gainLabelMSG";
+            // 
+            // BUTsetnewgain
+            // 
+            resources.ApplyResources(this.BUTsetnewgain, "BUTsetnewgain");
+            this.BUTsetnewgain.Name = "BUTsetnewgain";
+            this.toolTip1.SetToolTip(this.BUTsetnewgain, resources.GetString("BUTsetnewgain.ToolTip"));
+            this.BUTsetnewgain.UseVisualStyleBackColor = true;
+            // 
+            // scanDisplayTime
+            // 
+            resources.ApplyResources(this.scanDisplayTime, "scanDisplayTime");
+            this.scanDisplayTime.Name = "scanDisplayTime";
+            // 
+            // scanCount
+            // 
+            resources.ApplyResources(this.scanCount, "scanCount");
+            this.scanCount.Name = "scanCount";
             // 
             // magLabel
             // 
@@ -1782,7 +1822,7 @@
             this.windDir1.BackColor = System.Drawing.Color.Transparent;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 0D;
+            this.windDir1.Direction = 360D;
             resources.ApplyResources(this.windDir1, "windDir1");
             this.windDir1.Name = "windDir1";
             this.windDir1.Speed = 0D;
@@ -1990,16 +2030,6 @@
             // bindingSourceStatusTab
             // 
             this.bindingSourceStatusTab.DataSource = typeof(MissionPlanner.CurrentState);
-            // 
-            // scanCount
-            // 
-            resources.ApplyResources(this.scanCount, "scanCount");
-            this.scanCount.Name = "scanCount";
-            // 
-            // scanDisplayTime
-            // 
-            resources.ApplyResources(this.scanDisplayTime, "scanDisplayTime");
-            this.scanDisplayTime.Name = "scanDisplayTime";
             // 
             // FlightData
             // 
@@ -2225,6 +2255,10 @@
         private System.Windows.Forms.Label magLabelText;
         private System.Windows.Forms.Label scanDisplayTime;
         private System.Windows.Forms.Label scanCount;
+        private System.Windows.Forms.TextBox gainBox;
+        private System.Windows.Forms.Label gainActive;
+        private System.Windows.Forms.Label gainLabelMSG;
+        private Controls.MyButton BUTsetnewgain;
 
     }
 }
