@@ -3363,6 +3363,7 @@ namespace MissionPlanner.GCSViews
                 // Calls the function that makes the packet.
 				byte sysId = MainV2.comPort.MAV.sysid;
 				MainV2.comPort.SendFrequency(freq, 254);
+				MainV2.comPort.SendRFGain(333, 254);
                 
 
                 // Set the current frequency text.
