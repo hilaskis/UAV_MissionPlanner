@@ -117,13 +117,20 @@ namespace MissionPlanner.Utilities
 
             if (current <= arraySize)
             {
-                // Must convert to radians for the trig functions.
-                x = Math.Cos((angle /** deg2rad*/)) * mag;
-                y = Math.Sin((angle /** deg2rad*/)) * mag;
+                // Check for an angle between 180 and 360 represented as -PI to just less than 0.  
+                if((angle >= -Math.PI) && (angle < 0))
+                {
+                    // Convert to make angle 0 to 2PI.
+                    angle = (Math.PI * 2) + angle;
+                }
 
+                // Get the magnitude for the x an y planes, then log into the arrays.
+                x = Math.Cos((angle)) * mag;
+                y = Math.Sin((angle)) * mag;
                 xplane[current] = x;
                 yplane[current] = y;
 
+                // Increment array position tracker.
                 current++;
             }
         }
