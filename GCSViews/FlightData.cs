@@ -3374,25 +3374,7 @@ namespace MissionPlanner.GCSViews
 
         private void BUTsetnewgain_Click(object sender, EventArgs e)
         {
-            try
-            {
-                // Disable button.
-                ((Button)sender).Enabled = false;
 
-                // Get the value entered out of the text box.
-                float gain = Convert.ToSingle(gainBox.Text);
-
-                // Calls the function that makes the packet.
-                byte sysId = MainV2.comPort.MAV.sysid;
-                MainV2.comPort.SendRFGain(gain, 254);
-
-
-                // Set the current frequency text.
-                gainActive.Text = gainBox.Text;
-
-            }
-            catch { CustomMessageBox.Show("Check input gain!", Strings.ErrorSettingParameter); }
-            ((Button)sender).Enabled = true;
         }
 
         /*
@@ -3453,6 +3435,7 @@ namespace MissionPlanner.GCSViews
          */ 
         public void updateABSBearing()
         {
+            
             // Look to see if a signal was found.  If not, update GUI accordingly.
             if (absBearing.foundSignal == true)
             {
@@ -3462,7 +3445,7 @@ namespace MissionPlanner.GCSViews
 
                 // Set the GUI to display the new bearing and magnitude.
                 bearDir1.Speed = 10;
-                bearDir1.Direction = 180 + newBearing;
+                bearDir1.Direction = newBearing;
                 bearDir1.Update();
                 magLabel.Text = newMagnitude.ToString();
                 absBearingValue.Text = newBearing.ToString();
@@ -3474,6 +3457,7 @@ namespace MissionPlanner.GCSViews
                 magLabel.Text = "Not Detected";
                 absBearingValue.Text = "Not Detected";
             }
+            
         }
 
         private void RDFpage_Click(object sender, EventArgs e)

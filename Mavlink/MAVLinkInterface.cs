@@ -3512,8 +3512,8 @@ Please check the following
 
 
 				// Update the bearing and magnitude in the absBearing instance.
-				absBearing.setBearing(bearingPkt.angle);
-				absBearing.setMag(bearingPkt.magnitude);
+				//absBearing.setBearing(bearingPkt.angle);
+				//absBearing.setMag(bearingPkt.magnitude);
 				Console.WriteLine("Angle: {0}\tMagnitude: {1}", bearingPkt.angle, bearingPkt.magnitude);
 				absBearing.logDetectedXY(bearingPkt.angle, bearingPkt.magnitude);
 

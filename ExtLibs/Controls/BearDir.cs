@@ -27,7 +27,7 @@ namespace MissionPlanner.Controls
         double maxspeed = 10;
 
         [System.ComponentModel.Browsable(true), System.ComponentModel.Category("Options")]
-        public double Direction { get { return _direction; } set { if (_direction == (value + 180)) return; _direction = (value + 180); this.Invalidate(); } }
+        public double Direction { get { return _direction; } set { _direction = value; this.Invalidate(); } }
         [System.ComponentModel.Browsable(true), System.ComponentModel.Category("Options")]
         public double Speed { get { return _speed; } set { if (_speed == value) return; _speed = value; this.Invalidate(); } }
 

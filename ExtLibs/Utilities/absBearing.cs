@@ -70,10 +70,10 @@ namespace MissionPlanner.Utilities
         /* 
          * Sets the bearing of the signal.
          */
-        static public void setBearing(double newBearing)
+        /*static public void setBearing(double newBearing)
         {
             bearing = newBearing;
-        }
+        }*/
 
         /*
          * Gets the magnitude of the signal.
@@ -86,10 +86,10 @@ namespace MissionPlanner.Utilities
         /*
          * Set the magnitue of the detected signal.
          */
-        static public void setMag(double newMag)
+        /*static public void setMag(double newMag)
         {
             mag = newMag;
-        }
+        }*/
 
         /*
          * Sets all values in the xplane a yplane arrays to -1. 
@@ -124,9 +124,9 @@ namespace MissionPlanner.Utilities
                     angle = (Math.PI * 2) + angle;
                 }
 
-                // Get the magnitude for the x an y planes, then log into the arrays.
-                x = Math.Cos((angle)) * mag;
-                y = Math.Sin((angle)) * mag;
+                // Get the magnitude for the x and y planes, then log into the arrays.
+                x = Math.Cos((angle)) * Math.Abs(mag);
+                y = Math.Sin((angle)) * Math.Abs(mag);
                 xplane[current] = x;
                 yplane[current] = y;
 
