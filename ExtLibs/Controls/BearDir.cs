@@ -68,7 +68,7 @@ namespace MissionPlanner.Controls
 
             double x = (this.Width / 2) * Math.Cos((_direction - 90) * deg2rad);
 
-            double y = (this.Height / 2) * Math.Sin((_direction-90) * deg2rad);
+            double y = (this.Height / 2) * Math.Sin((_direction -90) * deg2rad);
 
             // full scale is 10ms
 

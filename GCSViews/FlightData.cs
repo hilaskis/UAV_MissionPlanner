@@ -116,6 +116,8 @@ namespace MissionPlanner.GCSViews
         //System.Timers.Timer scanTimer = new System.Timers.Timer(47000);
         System.Timers.Timer scanTimer = new System.Timers.Timer(1000);
 
+		private double twoPi = Math.PI * 2;
+
 
         private void deleteToolStripMenuItem_Click(object sender, System.EventArgs e)
         {
@@ -3448,7 +3450,16 @@ namespace MissionPlanner.GCSViews
                 bearDir1.Direction = newBearing;
                 bearDir1.Update();
                 magLabel.Text = newMagnitude.ToString();
-                absBearingValue.Text = newBearing.ToString();
+				if (newBearing < 0)
+				{
+					double fix = 360.0 + newBearing;
+					absBearingValue.Text = fix.ToString();
+				}
+				else
+				{
+					absBearingValue.Text = newBearing.ToString();
+				}
+				absBearing.foundSignal = false;
             }
             else
             {
