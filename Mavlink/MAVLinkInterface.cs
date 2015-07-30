@@ -3535,6 +3535,15 @@ Please check the following
             generatePacket((byte)MAVLINK_MSG_ID.TUNED_FREQUENCY, newFreq);
         }
 
+        /// <summary>
+        /// Sends the new center frequency of the SDR to the Raspberry Pi.
+        /// </summary>
+        public void SendGain(float gainUpdate, byte sysId)
+        {
+            mavlink_rf_gain_t newGain= new mavlink_rf_gain_t() { gain = gainUpdate, target_system = sysId };
+            generatePacket((byte)MAVLINK_MSG_ID.RF_GAIN, newGain);
+        }
+
 		/// <summary>
 		/// Sends the new RF gain of the SDR to the Raspberry Pi.
 		/// </summary>

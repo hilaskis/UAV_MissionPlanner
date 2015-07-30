@@ -3376,7 +3376,24 @@ namespace MissionPlanner.GCSViews
 
         private void BUTsetnewgain_Click(object sender, EventArgs e)
         {
+            try
+            {
+                // Disable button.
+                ((Button)sender).Enabled = false;
 
+                // Get the value entered out of the text box.
+                float gain = Convert.ToSingle(gainBox.Text);
+
+                // Calls the function that makes the packet.
+                byte sysId = MainV2.comPort.MAV.sysid;
+                MainV2.comPort.SendGain(gain, 254);
+
+                // Set the current frequency text.
+                gainActive.Text = gainBox.Text;
+
+            }
+            catch { CustomMessageBox.Show("Check input gain!", Strings.ErrorSettingParameter); }
+            ((Button)sender).Enabled = true;
         }
 
         /*
