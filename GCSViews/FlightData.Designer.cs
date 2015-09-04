@@ -379,6 +379,7 @@
             // radioDF
             // 
             this.radioDF.ContextMenuStrip = this.contextMenuStripactionstab;
+            this.radioDF.Controls.Add(this.RDFpage);
             this.radioDF.Controls.Add(this.tabQuick);
             this.radioDF.Controls.Add(this.tabActions);
             this.radioDF.Controls.Add(this.tabActionsSimple);
@@ -389,7 +390,6 @@
             this.radioDF.Controls.Add(this.tablogbrowse);
             this.radioDF.Controls.Add(this.tabScripts);
             this.radioDF.Controls.Add(this.tabPagemessages);
-            this.radioDF.Controls.Add(this.RDFpage);
             resources.ApplyResources(this.radioDF, "radioDF");
             this.radioDF.Name = "radioDF";
             this.radioDF.SelectedIndex = 0;
@@ -1571,6 +1571,7 @@
             this.BUTsetnewgain.Name = "BUTsetnewgain";
             this.toolTip1.SetToolTip(this.BUTsetnewgain, resources.GetString("BUTsetnewgain.ToolTip"));
             this.BUTsetnewgain.UseVisualStyleBackColor = true;
+            this.BUTsetnewgain.Click += new System.EventHandler(this.BUTsetnewgain_Click);
             // 
             // scanDisplayTime
             // 
@@ -1822,7 +1823,7 @@
             this.windDir1.BackColor = System.Drawing.Color.Transparent;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 360D;
+            this.windDir1.Direction = 0D;
             resources.ApplyResources(this.windDir1, "windDir1");
             this.windDir1.Name = "windDir1";
             this.windDir1.Speed = 0D;

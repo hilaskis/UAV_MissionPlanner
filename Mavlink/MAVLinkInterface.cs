@@ -2683,7 +2683,7 @@ Please check the following
 				ReceivedPacketByteSwap(buffer, 7);	//Swap bytes for magnitude data
 				ReceivedPacketByteSwap(buffer, 11);	//Swap bytes for angle data
                 // Get the bearing data out of the packet.
-                GetPhaseOffset(ref buffer);
+                GetDetectedSignalData(ref buffer);
 
                 return buffer;
             }
@@ -3496,26 +3496,18 @@ Please check the following
         }
 
         /// <summary>
-        /// Receives the phase offset in a MAVLink packet.  
+        /// Gets the data out of the buffer representing the detected signal data packet.
         /// </summary>
-        public void GetPhaseOffset(ref byte[] buffer)
+        public void GetDetectedSignalData(ref byte[] buffer)
         {
             // Only deal with the packet when bearing calculation is active.
             if (absBearing.active == true)
             {
                 // Get the direction of the received signal out of the packet.
-                var bearingPkt = buffer.ByteArrayToStructure<mavlink_pi_packet_t>(6);
-
-                // Update the bearing and magnitude in the absBearing instance.
-                //absBearing.setBearing(bearingPkt.angle);
-                //absBearing.setMag(bearingPkt.magnitude);
-
-
-				// Update the bearing and magnitude in the absBearing instance.
-				//absBearing.setBearing(bearingPkt.angle);
-				//absBearing.setMag(bearingPkt.magnitude);
-				Console.WriteLine("Angle: {0}\tMagnitude: {1}", bearingPkt.angle, bearingPkt.magnitude);
-				absBearing.logDetectedXY(bearingPkt.angle, bearingPkt.magnitude);
+                var dataPkt = buffer.ByteArrayToStructure<mavlink_pi_packet_t>(6);
+                
+                // Log the detected data.
+				absBearing.logDetectedXY(dataPkt.angle, dataPkt.magnitude);
 
                 // If the call has been subscribed too then it will execute.
                 if (call != null)
@@ -3536,24 +3528,13 @@ Please check the following
         }
 
         /// <summary>
-        /// Sends the new center frequency of the SDR to the Raspberry Pi.
+        /// Sends the new gain of the SDR to the Raspberry Pi.
         /// </summary>
         public void SendGain(float gainUpdate, byte sysId)
         {
             mavlink_rf_gain_t newGain= new mavlink_rf_gain_t() { gain = gainUpdate, target_system = sysId };
             generatePacket((byte)MAVLINK_MSG_ID.RF_GAIN, newGain);
         }
-
-		/// <summary>
-		/// Sends the new RF gain of the SDR to the Raspberry Pi.
-		/// </summary>
-		/// <param name="gain"></param>
-		/// <param name="sysId"></param>
-		public void SendRFGain(float gain, byte sysId)
-		{
-			mavlink_rf_gain_t newGain = new mavlink_rf_gain_t() { gain = gain, target_system = sysId };
-			generatePacket((byte)MAVLINK_MSG_ID.RF_GAIN, newGain);
-		}
 
 		/// <summary>
 		/// Used to swap the byte positions of float types received from Pi/Pixhawk

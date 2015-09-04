@@ -246,6 +246,705 @@
   <data name="&gt;&gt;contextMenuStripactionstab.Type" xml:space="preserve">
     <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="gainBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 146</value>
+  </data>
+  <data name="gainBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
+  </data>
+  <data name="gainBox.TabIndex" type="System.Int32, mscorlib">
+    <value>110</value>
+  </data>
+  <data name="&gt;&gt;gainBox.Name" xml:space="preserve">
+    <value>gainBox</value>
+  </data>
+  <data name="&gt;&gt;gainBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gainBox.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;gainBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="gainActive.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gainActive.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="gainActive.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 101</value>
+  </data>
+  <data name="gainActive.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="gainActive.TabIndex" type="System.Int32, mscorlib">
+    <value>109</value>
+  </data>
+  <data name="gainActive.Text" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;gainActive.Name" xml:space="preserve">
+    <value>gainActive</value>
+  </data>
+  <data name="&gt;&gt;gainActive.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gainActive.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;gainActive.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="gainLabelMSG.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="gainLabelMSG.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 84</value>
+  </data>
+  <data name="gainLabelMSG.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 17</value>
+  </data>
+  <data name="gainLabelMSG.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gainLabelMSG.Text" xml:space="preserve">
+    <value>Current Gain (dB):</value>
+  </data>
+  <data name="&gt;&gt;gainLabelMSG.Name" xml:space="preserve">
+    <value>gainLabelMSG</value>
+  </data>
+  <data name="&gt;&gt;gainLabelMSG.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gainLabelMSG.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;gainLabelMSG.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="BUTsetnewgain.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BUTsetnewgain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 118</value>
+  </data>
+  <data name="BUTsetnewgain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 23</value>
+  </data>
+  <data name="BUTsetnewgain.TabIndex" type="System.Int32, mscorlib">
+    <value>108</value>
+  </data>
+  <data name="BUTsetnewgain.Text" xml:space="preserve">
+    <value>SetGain</value>
+  </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>617, 17</value>
+  </metadata>
+  <data name="BUTsetnewgain.ToolTip" xml:space="preserve">
+    <value>Set the frequency to be searched for</value>
+  </data>
+  <data name="&gt;&gt;BUTsetnewgain.Name" xml:space="preserve">
+    <value>BUTsetnewgain</value>
+  </data>
+  <data name="&gt;&gt;BUTsetnewgain.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;BUTsetnewgain.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;BUTsetnewgain.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="scanDisplayTime.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="scanDisplayTime.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="scanDisplayTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>338, 99</value>
+  </data>
+  <data name="scanDisplayTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 13</value>
+  </data>
+  <data name="scanDisplayTime.TabIndex" type="System.Int32, mscorlib">
+    <value>107</value>
+  </data>
+  <data name="scanDisplayTime.Text" xml:space="preserve">
+    <value>Inactive</value>
+  </data>
+  <data name="&gt;&gt;scanDisplayTime.Name" xml:space="preserve">
+    <value>scanDisplayTime</value>
+  </data>
+  <data name="&gt;&gt;scanDisplayTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;scanDisplayTime.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;scanDisplayTime.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="scanCount.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="scanCount.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="scanCount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>322, 80</value>
+  </data>
+  <data name="scanCount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 13</value>
+  </data>
+  <data name="scanCount.TabIndex" type="System.Int32, mscorlib">
+    <value>106</value>
+  </data>
+  <data name="scanCount.Text" xml:space="preserve">
+    <value>Scan Active (s): </value>
+  </data>
+  <data name="&gt;&gt;scanCount.Name" xml:space="preserve">
+    <value>scanCount</value>
+  </data>
+  <data name="&gt;&gt;scanCount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;scanCount.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;scanCount.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="magLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="magLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="magLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 172</value>
+  </data>
+  <data name="magLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 13</value>
+  </data>
+  <data name="magLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <data name="magLabel.Text" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="&gt;&gt;magLabel.Name" xml:space="preserve">
+    <value>magLabel</value>
+  </data>
+  <data name="&gt;&gt;magLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;magLabel.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;magLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="magLabelText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="magLabelText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="magLabelText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 172</value>
+  </data>
+  <data name="magLabelText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 13</value>
+  </data>
+  <data name="magLabelText.TabIndex" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="magLabelText.Text" xml:space="preserve">
+    <value>RSSI (Relative Magnitude): </value>
+  </data>
+  <data name="&gt;&gt;magLabelText.Name" xml:space="preserve">
+    <value>magLabelText</value>
+  </data>
+  <data name="&gt;&gt;magLabelText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;magLabelText.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;magLabelText.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="HDG315.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="HDG315.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="HDG315.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 23</value>
+  </data>
+  <data name="HDG315.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 13</value>
+  </data>
+  <data name="HDG315.TabIndex" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="HDG315.Text" xml:space="preserve">
+    <value>315</value>
+  </data>
+  <data name="&gt;&gt;HDG315.Name" xml:space="preserve">
+    <value>HDG315</value>
+  </data>
+  <data name="&gt;&gt;HDG315.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HDG315.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;HDG315.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="HDG270.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="HDG270.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="HDG270.Location" type="System.Drawing.Point, System.Drawing">
+    <value>114, 80</value>
+  </data>
+  <data name="HDG270.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 13</value>
+  </data>
+  <data name="HDG270.TabIndex" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="HDG270.Text" xml:space="preserve">
+    <value>270</value>
+  </data>
+  <data name="&gt;&gt;HDG270.Name" xml:space="preserve">
+    <value>HDG270</value>
+  </data>
+  <data name="&gt;&gt;HDG270.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HDG270.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;HDG270.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="HDG225.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="HDG225.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="HDG225.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 140</value>
+  </data>
+  <data name="HDG225.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 13</value>
+  </data>
+  <data name="HDG225.TabIndex" type="System.Int32, mscorlib">
+    <value>99</value>
+  </data>
+  <data name="HDG225.Text" xml:space="preserve">
+    <value>225</value>
+  </data>
+  <data name="&gt;&gt;HDG225.Name" xml:space="preserve">
+    <value>HDG225</value>
+  </data>
+  <data name="&gt;&gt;HDG225.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HDG225.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;HDG225.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="HDG180.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="HDG180.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="HDG180.Location" type="System.Drawing.Point, System.Drawing">
+    <value>202, 158</value>
+  </data>
+  <data name="HDG180.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 13</value>
+  </data>
+  <data name="HDG180.TabIndex" type="System.Int32, mscorlib">
+    <value>98</value>
+  </data>
+  <data name="HDG180.Text" xml:space="preserve">
+    <value>180</value>
+  </data>
+  <data name="&gt;&gt;HDG180.Name" xml:space="preserve">
+    <value>HDG180</value>
+  </data>
+  <data name="&gt;&gt;HDG180.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HDG180.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;HDG180.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="HDG135.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="HDG135.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="HDG135.Location" type="System.Drawing.Point, System.Drawing">
+    <value>268, 140</value>
+  </data>
+  <data name="HDG135.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 13</value>
+  </data>
+  <data name="HDG135.TabIndex" type="System.Int32, mscorlib">
+    <value>97</value>
+  </data>
+  <data name="HDG135.Text" xml:space="preserve">
+    <value>135</value>
+  </data>
+  <data name="&gt;&gt;HDG135.Name" xml:space="preserve">
+    <value>HDG135</value>
+  </data>
+  <data name="&gt;&gt;HDG135.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HDG135.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;HDG135.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="HDG45.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="HDG45.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="HDG45.Location" type="System.Drawing.Point, System.Drawing">
+    <value>268, 23</value>
+  </data>
+  <data name="HDG45.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 13</value>
+  </data>
+  <data name="HDG45.TabIndex" type="System.Int32, mscorlib">
+    <value>96</value>
+  </data>
+  <data name="HDG45.Text" xml:space="preserve">
+    <value>045</value>
+  </data>
+  <data name="&gt;&gt;HDG45.Name" xml:space="preserve">
+    <value>HDG45</value>
+  </data>
+  <data name="&gt;&gt;HDG45.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HDG45.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;HDG45.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="HDG360.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="HDG360.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="HDG360.Location" type="System.Drawing.Point, System.Drawing">
+    <value>202, 3</value>
+  </data>
+  <data name="HDG360.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 13</value>
+  </data>
+  <data name="HDG360.TabIndex" type="System.Int32, mscorlib">
+    <value>95</value>
+  </data>
+  <data name="HDG360.Text" xml:space="preserve">
+    <value>360</value>
+  </data>
+  <data name="&gt;&gt;HDG360.Name" xml:space="preserve">
+    <value>HDG360</value>
+  </data>
+  <data name="&gt;&gt;HDG360.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HDG360.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;HDG360.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="HDG90.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="HDG90.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="HDG90.Location" type="System.Drawing.Point, System.Drawing">
+    <value>289, 80</value>
+  </data>
+  <data name="HDG90.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 13</value>
+  </data>
+  <data name="HDG90.TabIndex" type="System.Int32, mscorlib">
+    <value>94</value>
+  </data>
+  <data name="HDG90.Text" xml:space="preserve">
+    <value>090</value>
+  </data>
+  <data name="&gt;&gt;HDG90.Name" xml:space="preserve">
+    <value>HDG90</value>
+  </data>
+  <data name="&gt;&gt;HDG90.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HDG90.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;HDG90.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="bearDir1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="bearDir1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 15</value>
+  </data>
+  <data name="bearDir1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 144</value>
+  </data>
+  <data name="bearDir1.TabIndex" type="System.Int32, mscorlib">
+    <value>93</value>
+  </data>
+  <data name="&gt;&gt;bearDir1.Name" xml:space="preserve">
+    <value>bearDir1</value>
+  </data>
+  <data name="&gt;&gt;bearDir1.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.BearDir, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bearDir1.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;bearDir1.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="absBearingValue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="absBearingValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="absBearingValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>338, 44</value>
+  </data>
+  <data name="absBearingValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 13</value>
+  </data>
+  <data name="absBearingValue.TabIndex" type="System.Int32, mscorlib">
+    <value>91</value>
+  </data>
+  <data name="absBearingValue.Text" xml:space="preserve">
+    <value>NotActive</value>
+  </data>
+  <data name="&gt;&gt;absBearingValue.Name" xml:space="preserve">
+    <value>absBearingValue</value>
+  </data>
+  <data name="&gt;&gt;absBearingValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;absBearingValue.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;absBearingValue.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="absBearingMsg.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="absBearingMsg.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="absBearingMsg.Location" type="System.Drawing.Point, System.Drawing">
+    <value>322, 23</value>
+  </data>
+  <data name="absBearingMsg.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 13</value>
+  </data>
+  <data name="absBearingMsg.TabIndex" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="absBearingMsg.Text" xml:space="preserve">
+    <value>Absolute Bearing:</value>
+  </data>
+  <data name="&gt;&gt;absBearingMsg.Name" xml:space="preserve">
+    <value>absBearingMsg</value>
+  </data>
+  <data name="&gt;&gt;absBearingMsg.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;absBearingMsg.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;absBearingMsg.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="freqActive.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="freqActive.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="freqActive.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 18</value>
+  </data>
+  <data name="freqActive.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="freqActive.TabIndex" type="System.Int32, mscorlib">
+    <value>89</value>
+  </data>
+  <data name="freqActive.Text" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;freqActive.Name" xml:space="preserve">
+    <value>freqActive</value>
+  </data>
+  <data name="&gt;&gt;freqActive.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;freqActive.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;freqActive.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="freqLabelMSG.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="freqLabelMSG.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="freqLabelMSG.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="freqLabelMSG.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 13</value>
+  </data>
+  <data name="freqLabelMSG.TabIndex" type="System.Int32, mscorlib">
+    <value>88</value>
+  </data>
+  <data name="freqLabelMSG.Text" xml:space="preserve">
+    <value>Current Frequency (MHz):</value>
+  </data>
+  <data name="&gt;&gt;freqLabelMSG.Name" xml:space="preserve">
+    <value>freqLabelMSG</value>
+  </data>
+  <data name="&gt;&gt;freqLabelMSG.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;freqLabelMSG.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;freqLabelMSG.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="freqBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 63</value>
+  </data>
+  <data name="freqBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
+  </data>
+  <data name="freqBox.TabIndex" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="freqBox.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="freqBox.ToolTip" xml:space="preserve">
+    <value>Enter frequency here</value>
+  </data>
+  <data name="&gt;&gt;freqBox.Name" xml:space="preserve">
+    <value>freqBox</value>
+  </data>
+  <data name="&gt;&gt;freqBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;freqBox.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;freqBox.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="BUTsetnewfrequency.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BUTsetnewfrequency.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 34</value>
+  </data>
+  <data name="BUTsetnewfrequency.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 23</value>
+  </data>
+  <data name="BUTsetnewfrequency.TabIndex" type="System.Int32, mscorlib">
+    <value>86</value>
+  </data>
+  <data name="BUTsetnewfrequency.Text" xml:space="preserve">
+    <value>SetFrequency</value>
+  </data>
+  <data name="BUTsetnewfrequency.ToolTip" xml:space="preserve">
+    <value>Set the frequency to be searched for</value>
+  </data>
+  <data name="&gt;&gt;BUTsetnewfrequency.Name" xml:space="preserve">
+    <value>BUTsetnewfrequency</value>
+  </data>
+  <data name="&gt;&gt;BUTsetnewfrequency.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;BUTsetnewfrequency.Parent" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;BUTsetnewfrequency.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="RDFpage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="RDFpage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="RDFpage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>350, 162</value>
+  </data>
+  <data name="RDFpage.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="RDFpage.Text" xml:space="preserve">
+    <value>RDF</value>
+  </data>
+  <data name="&gt;&gt;RDFpage.Name" xml:space="preserve">
+    <value>RDFpage</value>
+  </data>
+  <data name="&gt;&gt;RDFpage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RDFpage.Parent" xml:space="preserve">
+    <value>radioDF</value>
+  </data>
+  <data name="&gt;&gt;RDFpage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="tabQuick.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -411,9 +1110,6 @@
   <data name="quickView1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>617, 17</value>
-  </metadata>
   <data name="quickView1.ToolTip" xml:space="preserve">
     <value>Double Click me to change</value>
   </data>
@@ -484,7 +1180,7 @@
     <value>radioDF</value>
   </data>
   <data name="&gt;&gt;tabQuick.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="but_autotune.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -577,7 +1273,7 @@
     <value>modifyandSetSpeed</value>
   </data>
   <data name="&gt;&gt;modifyandSetSpeed.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ModifyandSet, MissionPlanner, Version=1.1.5687.32167, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ModifyandSet, MissionPlanner, Version=1.1.5724.27992, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;modifyandSetSpeed.Parent" xml:space="preserve">
     <value>tabActions</value>
@@ -598,7 +1294,7 @@
     <value>modifyandSetAlt</value>
   </data>
   <data name="&gt;&gt;modifyandSetAlt.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ModifyandSet, MissionPlanner, Version=1.1.5687.32167, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ModifyandSet, MissionPlanner, Version=1.1.5724.27992, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;modifyandSetAlt.Parent" xml:space="preserve">
     <value>tabActions</value>
@@ -1057,7 +1753,7 @@
     <value>radioDF</value>
   </data>
   <data name="&gt;&gt;tabActions.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="myButton1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1171,7 +1867,7 @@
     <value>radioDF</value>
   </data>
   <data name="&gt;&gt;tabActionsSimple.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="Gvspeed.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
@@ -1324,7 +2020,7 @@
     <value>radioDF</value>
   </data>
   <data name="&gt;&gt;tabGauges.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="tabStatus.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1354,7 +2050,7 @@
     <value>radioDF</value>
   </data>
   <data name="&gt;&gt;tabStatus.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="flowLayoutPanelServos.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1372,7 +2068,7 @@
     <value>servoOptions1</value>
   </data>
   <data name="&gt;&gt;servoOptions1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5687.32167, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5724.27992, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions1.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1393,7 +2089,7 @@
     <value>servoOptions2</value>
   </data>
   <data name="&gt;&gt;servoOptions2.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5687.32167, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5724.27992, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions2.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1414,7 +2110,7 @@
     <value>servoOptions3</value>
   </data>
   <data name="&gt;&gt;servoOptions3.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5687.32167, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5724.27992, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions3.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1435,7 +2131,7 @@
     <value>servoOptions4</value>
   </data>
   <data name="&gt;&gt;servoOptions4.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5687.32167, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5724.27992, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions4.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1456,7 +2152,7 @@
     <value>servoOptions5</value>
   </data>
   <data name="&gt;&gt;servoOptions5.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5687.32167, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5724.27992, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions5.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1477,7 +2173,7 @@
     <value>servoOptions6</value>
   </data>
   <data name="&gt;&gt;servoOptions6.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5687.32167, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5724.27992, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions6.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1498,7 +2194,7 @@
     <value>servoOptions7</value>
   </data>
   <data name="&gt;&gt;servoOptions7.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5687.32167, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.1.5724.27992, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions7.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1555,7 +2251,7 @@
     <value>radioDF</value>
   </data>
   <data name="&gt;&gt;tabServo.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="tableLayoutPaneltlogs.ColumnCount" type="System.Int32, mscorlib">
     <value>3</value>
@@ -2065,7 +2761,7 @@
     <value>radioDF</value>
   </data>
   <data name="&gt;&gt;tabTLogs.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="BUT_loganalysis.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2254,7 +2950,7 @@
     <value>radioDF</value>
   </data>
   <data name="&gt;&gt;tablogbrowse.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="checkBoxRedirectOutput.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2488,7 +3184,7 @@
     <value>radioDF</value>
   </data>
   <data name="&gt;&gt;tabScripts.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="txt_messagebox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -2542,693 +3238,6 @@
     <value>radioDF</value>
   </data>
   <data name="&gt;&gt;tabPagemessages.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="gainBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 146</value>
-  </data>
-  <data name="gainBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
-  </data>
-  <data name="gainBox.TabIndex" type="System.Int32, mscorlib">
-    <value>110</value>
-  </data>
-  <data name="&gt;&gt;gainBox.Name" xml:space="preserve">
-    <value>gainBox</value>
-  </data>
-  <data name="&gt;&gt;gainBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gainBox.Parent" xml:space="preserve">
-    <value>RDFpage</value>
-  </data>
-  <data name="&gt;&gt;gainBox.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="gainActive.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="gainActive.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 101</value>
-  </data>
-  <data name="gainActive.Size" type="System.Drawing.Size, System.Drawing">
-    <value>33, 13</value>
-  </data>
-  <data name="gainActive.TabIndex" type="System.Int32, mscorlib">
-    <value>109</value>
-  </data>
-  <data name="gainActive.Text" xml:space="preserve">
-    <value>None</value>
-  </data>
-  <data name="&gt;&gt;gainActive.Name" xml:space="preserve">
-    <value>gainActive</value>
-  </data>
-  <data name="&gt;&gt;gainActive.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gainActive.Parent" xml:space="preserve">
-    <value>RDFpage</value>
-  </data>
-  <data name="&gt;&gt;gainActive.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="gainLabelMSG.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="gainLabelMSG.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 84</value>
-  </data>
-  <data name="gainLabelMSG.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 12</value>
-  </data>
-  <data name="gainLabelMSG.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="gainLabelMSG.Text" xml:space="preserve">
-    <value>Current Gain:</value>
-  </data>
-  <data name="&gt;&gt;gainLabelMSG.Name" xml:space="preserve">
-    <value>gainLabelMSG</value>
-  </data>
-  <data name="&gt;&gt;gainLabelMSG.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gainLabelMSG.Parent" xml:space="preserve">
-    <value>RDFpage</value>
-  </data>
-  <data name="&gt;&gt;gainLabelMSG.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="BUTsetnewgain.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="BUTsetnewgain.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 118</value>
-  </data>
-  <data name="BUTsetnewgain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 23</value>
-  </data>
-  <data name="BUTsetnewgain.TabIndex" type="System.Int32, mscorlib">
-    <value>108</value>
-  </data>
-  <data name="BUTsetnewgain.Text" xml:space="preserve">
-    <value>SetGain</value>
-  </data>
-  <data name="BUTsetnewgain.ToolTip" xml:space="preserve">
-    <value>Set the frequency to be searched for</value>
-  </data>
-  <data name="&gt;&gt;BUTsetnewgain.Name" xml:space="preserve">
-    <value>BUTsetnewgain</value>
-  </data>
-  <data name="&gt;&gt;BUTsetnewgain.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;BUTsetnewgain.Parent" xml:space="preserve">
-    <value>RDFpage</value>
-  </data>
-  <data name="&gt;&gt;BUTsetnewgain.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="scanDisplayTime.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="scanDisplayTime.Location" type="System.Drawing.Point, System.Drawing">
-    <value>338, 99</value>
-  </data>
-  <data name="scanDisplayTime.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 13</value>
-  </data>
-  <data name="scanDisplayTime.TabIndex" type="System.Int32, mscorlib">
-    <value>107</value>
-  </data>
-  <data name="scanDisplayTime.Text" xml:space="preserve">
-    <value>Inactive</value>
-  </data>
-  <data name="&gt;&gt;scanDisplayTime.Name" xml:space="preserve">
-    <value>scanDisplayTime</value>
-  </data>
-  <data name="&gt;&gt;scanDisplayTime.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;scanDisplayTime.Parent" xml:space="preserve">
-    <value>RDFpage</value>
-  </data>
-  <data name="&gt;&gt;scanDisplayTime.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="scanCount.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="scanCount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>322, 80</value>
-  </data>
-  <data name="scanCount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 13</value>
-  </data>
-  <data name="scanCount.TabIndex" type="System.Int32, mscorlib">
-    <value>106</value>
-  </data>
-  <data name="scanCount.Text" xml:space="preserve">
-    <value>Scan Active (s): </value>
-  </data>
-  <data name="&gt;&gt;scanCount.Name" xml:space="preserve">
-    <value>scanCount</value>
-  </data>
-  <data name="&gt;&gt;scanCount.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;scanCount.Parent" xml:space="preserve">
-    <value>RDFpage</value>
-  </data>
-  <data name="&gt;&gt;scanCount.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="magLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="magLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="magLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>227, 172</value>
-  </data>
-  <data name="magLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 13</value>
-  </data>
-  <data name="magLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>105</value>
-  </data>
-  <data name="magLabel.Text" xml:space="preserve">
-    <value>N/A</value>
-  </data>
-  <data name="&gt;&gt;magLabel.Name" xml:space="preserve">
-    <value>magLabel</value>
-  </data>
-  <data name="&gt;&gt;magLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;magLabel.Parent" xml:space="preserve">
-    <value>RDFpage</value>
-  </data>
-  <data name="&gt;&gt;magLabel.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="magLabelText.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="magLabelText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="magLabelText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>135, 172</value>
-  </data>
-  <data name="magLabelText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 13</value>
-  </data>
-  <data name="magLabelText.TabIndex" type="System.Int32, mscorlib">
-    <value>104</value>
-  </data>
-  <data name="magLabelText.Text" xml:space="preserve">
-    <value>RSSI (dB): </value>
-  </data>
-  <data name="&gt;&gt;magLabelText.Name" xml:space="preserve">
-    <value>magLabelText</value>
-  </data>
-  <data name="&gt;&gt;magLabelText.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;magLabelText.Parent" xml:space="preserve">
-    <value>RDFpage</value>
-  </data>
-  <data name="&gt;&gt;magLabelText.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="HDG315.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="HDG315.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="HDG315.Location" type="System.Drawing.Point, System.Drawing">
-    <value>135, 23</value>
-  </data>
-  <data name="HDG315.Size" type="System.Drawing.Size, System.Drawing">
-    <value>25, 13</value>
-  </data>
-  <data name="HDG315.TabIndex" type="System.Int32, mscorlib">
-    <value>101</value>
-  </data>
-  <data name="HDG315.Text" xml:space="preserve">
-    <value>315</value>
-  </data>
-  <data name="&gt;&gt;HDG315.Name" xml:space="preserve">
-    <value>HDG315</value>
-  </data>
-  <data name="&gt;&gt;HDG315.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HDG315.Parent" xml:space="preserve">
-    <value>RDFpage</value>
-  </data>
-  <data name="&gt;&gt;HDG315.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="HDG270.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="HDG270.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="HDG270.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 80</value>
-  </data>
-  <data name="HDG270.Size" type="System.Drawing.Size, System.Drawing">
-    <value>25, 13</value>
-  </data>
-  <data name="HDG270.TabIndex" type="System.Int32, mscorlib">
-    <value>100</value>
-  </data>
-  <data name="HDG270.Text" xml:space="preserve">
-    <value>270</value>
-  </data>
-  <data name="&gt;&gt;HDG270.Name" xml:space="preserve">
-    <value>HDG270</value>
-  </data>
-  <data name="&gt;&gt;HDG270.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HDG270.Parent" xml:space="preserve">
-    <value>RDFpage</value>
-  </data>
-  <data name="&gt;&gt;HDG270.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="HDG225.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="HDG225.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="HDG225.Location" type="System.Drawing.Point, System.Drawing">
-    <value>135, 140</value>
-  </data>
-  <data name="HDG225.Size" type="System.Drawing.Size, System.Drawing">
-    <value>25, 13</value>
-  </data>
-  <data name="HDG225.TabIndex" type="System.Int32, mscorlib">
-    <value>99</value>
-  </data>
-  <data name="HDG225.Text" xml:space="preserve">
-    <value>225</value>
-  </data>
-  <data name="&gt;&gt;HDG225.Name" xml:space="preserve">
-    <value>HDG225</value>
-  </data>
-  <data name="&gt;&gt;HDG225.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HDG225.Parent" xml:space="preserve">
-    <value>RDFpage</value>
-  </data>
-  <data name="&gt;&gt;HDG225.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="HDG180.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="HDG180.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="HDG180.Location" type="System.Drawing.Point, System.Drawing">
-    <value>202, 158</value>
-  </data>
-  <data name="HDG180.Size" type="System.Drawing.Size, System.Drawing">
-    <value>25, 13</value>
-  </data>
-  <data name="HDG180.TabIndex" type="System.Int32, mscorlib">
-    <value>98</value>
-  </data>
-  <data name="HDG180.Text" xml:space="preserve">
-    <value>180</value>
-  </data>
-  <data name="&gt;&gt;HDG180.Name" xml:space="preserve">
-    <value>HDG180</value>
-  </data>
-  <data name="&gt;&gt;HDG180.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HDG180.Parent" xml:space="preserve">
-    <value>RDFpage</value>
-  </data>
-  <data name="&gt;&gt;HDG180.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="HDG135.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="HDG135.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="HDG135.Location" type="System.Drawing.Point, System.Drawing">
-    <value>268, 140</value>
-  </data>
-  <data name="HDG135.Size" type="System.Drawing.Size, System.Drawing">
-    <value>25, 13</value>
-  </data>
-  <data name="HDG135.TabIndex" type="System.Int32, mscorlib">
-    <value>97</value>
-  </data>
-  <data name="HDG135.Text" xml:space="preserve">
-    <value>135</value>
-  </data>
-  <data name="&gt;&gt;HDG135.Name" xml:space="preserve">
-    <value>HDG135</value>
-  </data>
-  <data name="&gt;&gt;HDG135.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HDG135.Parent" xml:space="preserve">
-    <value>RDFpage</value>
-  </data>
-  <data name="&gt;&gt;HDG135.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="HDG45.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="HDG45.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="HDG45.Location" type="System.Drawing.Point, System.Drawing">
-    <value>268, 23</value>
-  </data>
-  <data name="HDG45.Size" type="System.Drawing.Size, System.Drawing">
-    <value>25, 13</value>
-  </data>
-  <data name="HDG45.TabIndex" type="System.Int32, mscorlib">
-    <value>96</value>
-  </data>
-  <data name="HDG45.Text" xml:space="preserve">
-    <value>045</value>
-  </data>
-  <data name="&gt;&gt;HDG45.Name" xml:space="preserve">
-    <value>HDG45</value>
-  </data>
-  <data name="&gt;&gt;HDG45.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HDG45.Parent" xml:space="preserve">
-    <value>RDFpage</value>
-  </data>
-  <data name="&gt;&gt;HDG45.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="HDG360.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="HDG360.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="HDG360.Location" type="System.Drawing.Point, System.Drawing">
-    <value>202, 3</value>
-  </data>
-  <data name="HDG360.Size" type="System.Drawing.Size, System.Drawing">
-    <value>25, 13</value>
-  </data>
-  <data name="HDG360.TabIndex" type="System.Int32, mscorlib">
-    <value>95</value>
-  </data>
-  <data name="HDG360.Text" xml:space="preserve">
-    <value>360</value>
-  </data>
-  <data name="&gt;&gt;HDG360.Name" xml:space="preserve">
-    <value>HDG360</value>
-  </data>
-  <data name="&gt;&gt;HDG360.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HDG360.Parent" xml:space="preserve">
-    <value>RDFpage</value>
-  </data>
-  <data name="&gt;&gt;HDG360.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="HDG90.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="HDG90.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="HDG90.Location" type="System.Drawing.Point, System.Drawing">
-    <value>289, 80</value>
-  </data>
-  <data name="HDG90.Size" type="System.Drawing.Size, System.Drawing">
-    <value>25, 13</value>
-  </data>
-  <data name="HDG90.TabIndex" type="System.Int32, mscorlib">
-    <value>94</value>
-  </data>
-  <data name="HDG90.Text" xml:space="preserve">
-    <value>090</value>
-  </data>
-  <data name="&gt;&gt;HDG90.Name" xml:space="preserve">
-    <value>HDG90</value>
-  </data>
-  <data name="&gt;&gt;HDG90.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HDG90.Parent" xml:space="preserve">
-    <value>RDFpage</value>
-  </data>
-  <data name="&gt;&gt;HDG90.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="bearDir1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
-  </data>
-  <data name="bearDir1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>138, 15</value>
-  </data>
-  <data name="bearDir1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 144</value>
-  </data>
-  <data name="bearDir1.TabIndex" type="System.Int32, mscorlib">
-    <value>93</value>
-  </data>
-  <data name="&gt;&gt;bearDir1.Name" xml:space="preserve">
-    <value>bearDir1</value>
-  </data>
-  <data name="&gt;&gt;bearDir1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.BearDir, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;bearDir1.Parent" xml:space="preserve">
-    <value>RDFpage</value>
-  </data>
-  <data name="&gt;&gt;bearDir1.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="absBearingValue.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="absBearingValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="absBearingValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>338, 44</value>
-  </data>
-  <data name="absBearingValue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 13</value>
-  </data>
-  <data name="absBearingValue.TabIndex" type="System.Int32, mscorlib">
-    <value>91</value>
-  </data>
-  <data name="absBearingValue.Text" xml:space="preserve">
-    <value>NotActive</value>
-  </data>
-  <data name="&gt;&gt;absBearingValue.Name" xml:space="preserve">
-    <value>absBearingValue</value>
-  </data>
-  <data name="&gt;&gt;absBearingValue.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;absBearingValue.Parent" xml:space="preserve">
-    <value>RDFpage</value>
-  </data>
-  <data name="&gt;&gt;absBearingValue.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="absBearingMsg.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="absBearingMsg.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="absBearingMsg.Location" type="System.Drawing.Point, System.Drawing">
-    <value>322, 23</value>
-  </data>
-  <data name="absBearingMsg.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 13</value>
-  </data>
-  <data name="absBearingMsg.TabIndex" type="System.Int32, mscorlib">
-    <value>90</value>
-  </data>
-  <data name="absBearingMsg.Text" xml:space="preserve">
-    <value>Absolute Bearing:</value>
-  </data>
-  <data name="&gt;&gt;absBearingMsg.Name" xml:space="preserve">
-    <value>absBearingMsg</value>
-  </data>
-  <data name="&gt;&gt;absBearingMsg.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;absBearingMsg.Parent" xml:space="preserve">
-    <value>RDFpage</value>
-  </data>
-  <data name="&gt;&gt;absBearingMsg.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="freqActive.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="freqActive.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="freqActive.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 18</value>
-  </data>
-  <data name="freqActive.Size" type="System.Drawing.Size, System.Drawing">
-    <value>33, 13</value>
-  </data>
-  <data name="freqActive.TabIndex" type="System.Int32, mscorlib">
-    <value>89</value>
-  </data>
-  <data name="freqActive.Text" xml:space="preserve">
-    <value>None</value>
-  </data>
-  <data name="&gt;&gt;freqActive.Name" xml:space="preserve">
-    <value>freqActive</value>
-  </data>
-  <data name="&gt;&gt;freqActive.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;freqActive.Parent" xml:space="preserve">
-    <value>RDFpage</value>
-  </data>
-  <data name="&gt;&gt;freqActive.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="freqLabelMSG.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="freqLabelMSG.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="freqLabelMSG.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="freqLabelMSG.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 13</value>
-  </data>
-  <data name="freqLabelMSG.TabIndex" type="System.Int32, mscorlib">
-    <value>88</value>
-  </data>
-  <data name="freqLabelMSG.Text" xml:space="preserve">
-    <value>Current Frequency:</value>
-  </data>
-  <data name="&gt;&gt;freqLabelMSG.Name" xml:space="preserve">
-    <value>freqLabelMSG</value>
-  </data>
-  <data name="&gt;&gt;freqLabelMSG.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;freqLabelMSG.Parent" xml:space="preserve">
-    <value>RDFpage</value>
-  </data>
-  <data name="&gt;&gt;freqLabelMSG.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="freqBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 63</value>
-  </data>
-  <data name="freqBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
-  </data>
-  <data name="freqBox.TabIndex" type="System.Int32, mscorlib">
-    <value>87</value>
-  </data>
-  <data name="freqBox.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="freqBox.ToolTip" xml:space="preserve">
-    <value>Enter frequency here</value>
-  </data>
-  <data name="&gt;&gt;freqBox.Name" xml:space="preserve">
-    <value>freqBox</value>
-  </data>
-  <data name="&gt;&gt;freqBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;freqBox.Parent" xml:space="preserve">
-    <value>RDFpage</value>
-  </data>
-  <data name="&gt;&gt;freqBox.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
-  <data name="BUTsetnewfrequency.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="BUTsetnewfrequency.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 34</value>
-  </data>
-  <data name="BUTsetnewfrequency.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 23</value>
-  </data>
-  <data name="BUTsetnewfrequency.TabIndex" type="System.Int32, mscorlib">
-    <value>86</value>
-  </data>
-  <data name="BUTsetnewfrequency.Text" xml:space="preserve">
-    <value>SetFrequency</value>
-  </data>
-  <data name="BUTsetnewfrequency.ToolTip" xml:space="preserve">
-    <value>Set the frequency to be searched for</value>
-  </data>
-  <data name="&gt;&gt;BUTsetnewfrequency.Name" xml:space="preserve">
-    <value>BUTsetnewfrequency</value>
-  </data>
-  <data name="&gt;&gt;BUTsetnewfrequency.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;BUTsetnewfrequency.Parent" xml:space="preserve">
-    <value>RDFpage</value>
-  </data>
-  <data name="&gt;&gt;BUTsetnewfrequency.ZOrder" xml:space="preserve">
-    <value>22</value>
-  </data>
-  <data name="RDFpage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="RDFpage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="RDFpage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>350, 162</value>
-  </data>
-  <data name="RDFpage.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="RDFpage.Text" xml:space="preserve">
-    <value>RDF</value>
-  </data>
-  <data name="&gt;&gt;RDFpage.Name" xml:space="preserve">
-    <value>RDFpage</value>
-  </data>
-  <data name="&gt;&gt;RDFpage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RDFpage.Parent" xml:space="preserve">
-    <value>radioDF</value>
-  </data>
-  <data name="&gt;&gt;RDFpage.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
   <data name="radioDF.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -3343,7 +3352,7 @@
     <value>zg1</value>
   </data>
   <data name="&gt;&gt;zg1.Type" xml:space="preserve">
-    <value>ZedGraph.ZedGraphControl, ZedGraph, Version=5.1.5.32120, Culture=neutral, PublicKeyToken=null</value>
+    <value>ZedGraph.ZedGraphControl, ZedGraph, Version=5.1.5.27967, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;zg1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel1</value>
@@ -3481,7 +3490,7 @@
     <value>distanceBar1</value>
   </data>
   <data name="&gt;&gt;distanceBar1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.DistanceBar, MissionPlanner, Version=1.1.5687.32167, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.DistanceBar, MissionPlanner, Version=1.1.5724.27992, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;distanceBar1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
