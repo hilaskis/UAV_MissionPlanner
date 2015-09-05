@@ -113,7 +113,6 @@ namespace MissionPlanner.GCSViews
         //whether or not the output console has already started
         bool outputwindowstarted = false;
 
-        //System.Timers.Timer scanTimer = new System.Timers.Timer(47000);
         System.Timers.Timer scanTimer = new System.Timers.Timer(1000);
 
 		private double twoPi = Math.PI * 2;

@@ -67,14 +67,6 @@ namespace MissionPlanner.Utilities
             return bearing;
         }
 
-        /* 
-         * Sets the bearing of the signal.
-         */
-        /*static public void setBearing(double newBearing)
-        {
-            bearing = newBearing;
-        }*/
-
         /*
          * Gets the magnitude of the signal.
          */
@@ -82,14 +74,6 @@ namespace MissionPlanner.Utilities
         {
             return mag;
         }
-
-        /*
-         * Set the magnitue of the detected signal.
-         */
-        /*static public void setMag(double newMag)
-        {
-            mag = newMag;
-        }*/
 
         /*
          * Sets all values in the xplane a yplane arrays to -1. 

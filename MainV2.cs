@@ -481,7 +481,7 @@ namespace MissionPlanner
                 FlightData = new GCSViews.FlightData();
 
                 // Subscribe to FlightData.updateABSBearing - This is called when bearing recieved.
-                comPort.call += FlightData.updateABSBearing;
+                //comPort.call += FlightData.updateABSBearing;
                 log.Info("Create FP");
                 FlightPlanner = new GCSViews.FlightPlanner();
                 //Configuration = new GCSViews.ConfigurationView.Setup();

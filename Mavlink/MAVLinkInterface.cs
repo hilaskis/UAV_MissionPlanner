@@ -25,7 +25,7 @@ namespace MissionPlanner
     public class MAVLinkInterface: MAVLink, IDisposable
     {
         // Create an instance of the Caller delegate.
-        public Caller call;
+        //public Caller call;
 
         private static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
         public ICommsSerial BaseStream { get; set; }
@@ -3508,12 +3508,6 @@ Please check the following
                 
                 // Log the detected data.
 				absBearing.logDetectedXY(dataPkt.angle, dataPkt.magnitude);
-
-                // If the call has been subscribed too then it will execute.
-                if (call != null)
-                {
-                    call();
-                }
             }
             
         }
