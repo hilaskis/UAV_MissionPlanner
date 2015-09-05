@@ -2677,15 +2677,13 @@ Please check the following
             }
             catch { }
 
-            // Check if the packet is a absolue brearing packet. 
+            // Check if the packet is an absolue bearing packet. 
             if (buffer[5] == 188)
             {
 				ReceivedPacketByteSwap(buffer, 7);	//Swap bytes for magnitude data
 				ReceivedPacketByteSwap(buffer, 11);	//Swap bytes for angle data
                 // Get the bearing data out of the packet.
                 GetDetectedSignalData(ref buffer);
-
-                return buffer;
             }
 
             // update last valid packet receive time
