@@ -24,6 +24,30 @@
             this.radioDF = new System.Windows.Forms.TabControl();
             this.contextMenuStripactionstab = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.dropOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.RDFpage = new System.Windows.Forms.TabPage();
+            this.gainBox = new System.Windows.Forms.TextBox();
+            this.gainActive = new System.Windows.Forms.Label();
+            this.gainLabelMSG = new System.Windows.Forms.Label();
+            this.BUTsetnewgain = new MissionPlanner.Controls.MyButton();
+            this.scanDisplayTime = new System.Windows.Forms.Label();
+            this.scanCount = new System.Windows.Forms.Label();
+            this.magLabel = new System.Windows.Forms.Label();
+            this.magLabelText = new System.Windows.Forms.Label();
+            this.HDG315 = new System.Windows.Forms.Label();
+            this.HDG270 = new System.Windows.Forms.Label();
+            this.HDG225 = new System.Windows.Forms.Label();
+            this.HDG180 = new System.Windows.Forms.Label();
+            this.HDG135 = new System.Windows.Forms.Label();
+            this.HDG45 = new System.Windows.Forms.Label();
+            this.HDG360 = new System.Windows.Forms.Label();
+            this.HDG90 = new System.Windows.Forms.Label();
+            this.bearDir1 = new MissionPlanner.Controls.BearDir();
+            this.absBearingValue = new System.Windows.Forms.Label();
+            this.absBearingMsg = new System.Windows.Forms.Label();
+            this.freqActive = new System.Windows.Forms.Label();
+            this.freqLabelMSG = new System.Windows.Forms.Label();
+            this.freqBox = new System.Windows.Forms.TextBox();
+            this.BUTsetnewfrequency = new MissionPlanner.Controls.MyButton();
             this.tabQuick = new System.Windows.Forms.TabPage();
             this.tableLayoutPanelQuick = new System.Windows.Forms.TableLayoutPanel();
             this.quickView6 = new MissionPlanner.Controls.QuickView();
@@ -109,30 +133,6 @@
             this.BUT_select_script = new MissionPlanner.Controls.MyButton();
             this.tabPagemessages = new System.Windows.Forms.TabPage();
             this.txt_messagebox = new System.Windows.Forms.TextBox();
-            this.RDFpage = new System.Windows.Forms.TabPage();
-            this.gainBox = new System.Windows.Forms.TextBox();
-            this.gainActive = new System.Windows.Forms.Label();
-            this.gainLabelMSG = new System.Windows.Forms.Label();
-            this.BUTsetnewgain = new MissionPlanner.Controls.MyButton();
-            this.scanDisplayTime = new System.Windows.Forms.Label();
-            this.scanCount = new System.Windows.Forms.Label();
-            this.magLabel = new System.Windows.Forms.Label();
-            this.magLabelText = new System.Windows.Forms.Label();
-            this.HDG315 = new System.Windows.Forms.Label();
-            this.HDG270 = new System.Windows.Forms.Label();
-            this.HDG225 = new System.Windows.Forms.Label();
-            this.HDG180 = new System.Windows.Forms.Label();
-            this.HDG135 = new System.Windows.Forms.Label();
-            this.HDG45 = new System.Windows.Forms.Label();
-            this.HDG360 = new System.Windows.Forms.Label();
-            this.HDG90 = new System.Windows.Forms.Label();
-            this.bearDir1 = new MissionPlanner.Controls.BearDir();
-            this.absBearingValue = new System.Windows.Forms.Label();
-            this.absBearingMsg = new System.Windows.Forms.Label();
-            this.freqActive = new System.Windows.Forms.Label();
-            this.freqLabelMSG = new System.Windows.Forms.Label();
-            this.freqBox = new System.Windows.Forms.TextBox();
-            this.BUTsetnewfrequency = new MissionPlanner.Controls.MyButton();
             this.tableMap = new System.Windows.Forms.TableLayoutPanel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.zg1 = new ZedGraph.ZedGraphControl();
@@ -185,6 +185,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceHud)).BeginInit();
             this.radioDF.SuspendLayout();
             this.contextMenuStripactionstab.SuspendLayout();
+            this.RDFpage.SuspendLayout();
             this.tabQuick.SuspendLayout();
             this.tableLayoutPanelQuick.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceQuickTab)).BeginInit();
@@ -201,7 +202,6 @@
             this.tablogbrowse.SuspendLayout();
             this.tabScripts.SuspendLayout();
             this.tabPagemessages.SuspendLayout();
-            this.RDFpage.SuspendLayout();
             this.tableMap.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -408,6 +408,169 @@
             this.dropOutToolStripMenuItem.Name = "dropOutToolStripMenuItem";
             resources.ApplyResources(this.dropOutToolStripMenuItem, "dropOutToolStripMenuItem");
             this.dropOutToolStripMenuItem.Click += new System.EventHandler(this.dropOutToolStripMenuItem_Click);
+            // 
+            // RDFpage
+            // 
+            this.RDFpage.Controls.Add(this.gainBox);
+            this.RDFpage.Controls.Add(this.gainActive);
+            this.RDFpage.Controls.Add(this.gainLabelMSG);
+            this.RDFpage.Controls.Add(this.BUTsetnewgain);
+            this.RDFpage.Controls.Add(this.scanDisplayTime);
+            this.RDFpage.Controls.Add(this.scanCount);
+            this.RDFpage.Controls.Add(this.magLabel);
+            this.RDFpage.Controls.Add(this.magLabelText);
+            this.RDFpage.Controls.Add(this.HDG315);
+            this.RDFpage.Controls.Add(this.HDG270);
+            this.RDFpage.Controls.Add(this.HDG225);
+            this.RDFpage.Controls.Add(this.HDG180);
+            this.RDFpage.Controls.Add(this.HDG135);
+            this.RDFpage.Controls.Add(this.HDG45);
+            this.RDFpage.Controls.Add(this.HDG360);
+            this.RDFpage.Controls.Add(this.HDG90);
+            this.RDFpage.Controls.Add(this.bearDir1);
+            this.RDFpage.Controls.Add(this.absBearingValue);
+            this.RDFpage.Controls.Add(this.absBearingMsg);
+            this.RDFpage.Controls.Add(this.freqActive);
+            this.RDFpage.Controls.Add(this.freqLabelMSG);
+            this.RDFpage.Controls.Add(this.freqBox);
+            this.RDFpage.Controls.Add(this.BUTsetnewfrequency);
+            resources.ApplyResources(this.RDFpage, "RDFpage");
+            this.RDFpage.Name = "RDFpage";
+            this.RDFpage.UseVisualStyleBackColor = true;
+            this.RDFpage.Click += new System.EventHandler(this.RDFpage_Click);
+            // 
+            // gainBox
+            // 
+            resources.ApplyResources(this.gainBox, "gainBox");
+            this.gainBox.Name = "gainBox";
+            // 
+            // gainActive
+            // 
+            resources.ApplyResources(this.gainActive, "gainActive");
+            this.gainActive.Name = "gainActive";
+            // 
+            // gainLabelMSG
+            // 
+            resources.ApplyResources(this.gainLabelMSG, "gainLabelMSG");
+            this.gainLabelMSG.Name = "gainLabelMSG";
+            // 
+            // BUTsetnewgain
+            // 
+            resources.ApplyResources(this.BUTsetnewgain, "BUTsetnewgain");
+            this.BUTsetnewgain.Name = "BUTsetnewgain";
+            this.toolTip1.SetToolTip(this.BUTsetnewgain, resources.GetString("BUTsetnewgain.ToolTip"));
+            this.BUTsetnewgain.UseVisualStyleBackColor = true;
+            this.BUTsetnewgain.Click += new System.EventHandler(this.BUTsetnewgain_Click);
+            // 
+            // scanDisplayTime
+            // 
+            resources.ApplyResources(this.scanDisplayTime, "scanDisplayTime");
+            this.scanDisplayTime.Name = "scanDisplayTime";
+            // 
+            // scanCount
+            // 
+            resources.ApplyResources(this.scanCount, "scanCount");
+            this.scanCount.Name = "scanCount";
+            // 
+            // magLabel
+            // 
+            resources.ApplyResources(this.magLabel, "magLabel");
+            this.magLabel.Name = "magLabel";
+            // 
+            // magLabelText
+            // 
+            resources.ApplyResources(this.magLabelText, "magLabelText");
+            this.magLabelText.Name = "magLabelText";
+            // 
+            // HDG315
+            // 
+            resources.ApplyResources(this.HDG315, "HDG315");
+            this.HDG315.ForeColor = System.Drawing.Color.Red;
+            this.HDG315.Name = "HDG315";
+            // 
+            // HDG270
+            // 
+            resources.ApplyResources(this.HDG270, "HDG270");
+            this.HDG270.ForeColor = System.Drawing.Color.Red;
+            this.HDG270.Name = "HDG270";
+            // 
+            // HDG225
+            // 
+            resources.ApplyResources(this.HDG225, "HDG225");
+            this.HDG225.ForeColor = System.Drawing.Color.Red;
+            this.HDG225.Name = "HDG225";
+            // 
+            // HDG180
+            // 
+            resources.ApplyResources(this.HDG180, "HDG180");
+            this.HDG180.ForeColor = System.Drawing.Color.Red;
+            this.HDG180.Name = "HDG180";
+            // 
+            // HDG135
+            // 
+            resources.ApplyResources(this.HDG135, "HDG135");
+            this.HDG135.ForeColor = System.Drawing.Color.Red;
+            this.HDG135.Name = "HDG135";
+            // 
+            // HDG45
+            // 
+            resources.ApplyResources(this.HDG45, "HDG45");
+            this.HDG45.ForeColor = System.Drawing.Color.Red;
+            this.HDG45.Name = "HDG45";
+            // 
+            // HDG360
+            // 
+            resources.ApplyResources(this.HDG360, "HDG360");
+            this.HDG360.ForeColor = System.Drawing.Color.Red;
+            this.HDG360.Name = "HDG360";
+            // 
+            // HDG90
+            // 
+            resources.ApplyResources(this.HDG90, "HDG90");
+            this.HDG90.ForeColor = System.Drawing.Color.Red;
+            this.HDG90.Name = "HDG90";
+            // 
+            // bearDir1
+            // 
+            this.bearDir1.BackColor = System.Drawing.Color.Transparent;
+            this.bearDir1.Direction = 360D;
+            resources.ApplyResources(this.bearDir1, "bearDir1");
+            this.bearDir1.Name = "bearDir1";
+            this.bearDir1.Speed = 0D;
+            // 
+            // absBearingValue
+            // 
+            resources.ApplyResources(this.absBearingValue, "absBearingValue");
+            this.absBearingValue.Name = "absBearingValue";
+            // 
+            // absBearingMsg
+            // 
+            resources.ApplyResources(this.absBearingMsg, "absBearingMsg");
+            this.absBearingMsg.Name = "absBearingMsg";
+            // 
+            // freqActive
+            // 
+            resources.ApplyResources(this.freqActive, "freqActive");
+            this.freqActive.Name = "freqActive";
+            // 
+            // freqLabelMSG
+            // 
+            resources.ApplyResources(this.freqLabelMSG, "freqLabelMSG");
+            this.freqLabelMSG.Name = "freqLabelMSG";
+            // 
+            // freqBox
+            // 
+            resources.ApplyResources(this.freqBox, "freqBox");
+            this.freqBox.Name = "freqBox";
+            this.toolTip1.SetToolTip(this.freqBox, resources.GetString("freqBox.ToolTip"));
+            // 
+            // BUTsetnewfrequency
+            // 
+            resources.ApplyResources(this.BUTsetnewfrequency, "BUTsetnewfrequency");
+            this.BUTsetnewfrequency.Name = "BUTsetnewfrequency";
+            this.toolTip1.SetToolTip(this.BUTsetnewfrequency, resources.GetString("BUTsetnewfrequency.ToolTip"));
+            this.BUTsetnewfrequency.UseVisualStyleBackColor = true;
+            this.BUTsetnewfrequency.Click += new System.EventHandler(this.BUTsetnewfrequency_Click);
             // 
             // tabQuick
             // 
@@ -1520,169 +1683,6 @@
             resources.ApplyResources(this.txt_messagebox, "txt_messagebox");
             this.txt_messagebox.Name = "txt_messagebox";
             // 
-            // RDFpage
-            // 
-            this.RDFpage.Controls.Add(this.gainBox);
-            this.RDFpage.Controls.Add(this.gainActive);
-            this.RDFpage.Controls.Add(this.gainLabelMSG);
-            this.RDFpage.Controls.Add(this.BUTsetnewgain);
-            this.RDFpage.Controls.Add(this.scanDisplayTime);
-            this.RDFpage.Controls.Add(this.scanCount);
-            this.RDFpage.Controls.Add(this.magLabel);
-            this.RDFpage.Controls.Add(this.magLabelText);
-            this.RDFpage.Controls.Add(this.HDG315);
-            this.RDFpage.Controls.Add(this.HDG270);
-            this.RDFpage.Controls.Add(this.HDG225);
-            this.RDFpage.Controls.Add(this.HDG180);
-            this.RDFpage.Controls.Add(this.HDG135);
-            this.RDFpage.Controls.Add(this.HDG45);
-            this.RDFpage.Controls.Add(this.HDG360);
-            this.RDFpage.Controls.Add(this.HDG90);
-            this.RDFpage.Controls.Add(this.bearDir1);
-            this.RDFpage.Controls.Add(this.absBearingValue);
-            this.RDFpage.Controls.Add(this.absBearingMsg);
-            this.RDFpage.Controls.Add(this.freqActive);
-            this.RDFpage.Controls.Add(this.freqLabelMSG);
-            this.RDFpage.Controls.Add(this.freqBox);
-            this.RDFpage.Controls.Add(this.BUTsetnewfrequency);
-            resources.ApplyResources(this.RDFpage, "RDFpage");
-            this.RDFpage.Name = "RDFpage";
-            this.RDFpage.UseVisualStyleBackColor = true;
-            this.RDFpage.Click += new System.EventHandler(this.RDFpage_Click);
-            // 
-            // gainBox
-            // 
-            resources.ApplyResources(this.gainBox, "gainBox");
-            this.gainBox.Name = "gainBox";
-            // 
-            // gainActive
-            // 
-            resources.ApplyResources(this.gainActive, "gainActive");
-            this.gainActive.Name = "gainActive";
-            // 
-            // gainLabelMSG
-            // 
-            resources.ApplyResources(this.gainLabelMSG, "gainLabelMSG");
-            this.gainLabelMSG.Name = "gainLabelMSG";
-            // 
-            // BUTsetnewgain
-            // 
-            resources.ApplyResources(this.BUTsetnewgain, "BUTsetnewgain");
-            this.BUTsetnewgain.Name = "BUTsetnewgain";
-            this.toolTip1.SetToolTip(this.BUTsetnewgain, resources.GetString("BUTsetnewgain.ToolTip"));
-            this.BUTsetnewgain.UseVisualStyleBackColor = true;
-            this.BUTsetnewgain.Click += new System.EventHandler(this.BUTsetnewgain_Click);
-            // 
-            // scanDisplayTime
-            // 
-            resources.ApplyResources(this.scanDisplayTime, "scanDisplayTime");
-            this.scanDisplayTime.Name = "scanDisplayTime";
-            // 
-            // scanCount
-            // 
-            resources.ApplyResources(this.scanCount, "scanCount");
-            this.scanCount.Name = "scanCount";
-            // 
-            // magLabel
-            // 
-            resources.ApplyResources(this.magLabel, "magLabel");
-            this.magLabel.Name = "magLabel";
-            // 
-            // magLabelText
-            // 
-            resources.ApplyResources(this.magLabelText, "magLabelText");
-            this.magLabelText.Name = "magLabelText";
-            // 
-            // HDG315
-            // 
-            resources.ApplyResources(this.HDG315, "HDG315");
-            this.HDG315.ForeColor = System.Drawing.Color.Red;
-            this.HDG315.Name = "HDG315";
-            // 
-            // HDG270
-            // 
-            resources.ApplyResources(this.HDG270, "HDG270");
-            this.HDG270.ForeColor = System.Drawing.Color.Red;
-            this.HDG270.Name = "HDG270";
-            // 
-            // HDG225
-            // 
-            resources.ApplyResources(this.HDG225, "HDG225");
-            this.HDG225.ForeColor = System.Drawing.Color.Red;
-            this.HDG225.Name = "HDG225";
-            // 
-            // HDG180
-            // 
-            resources.ApplyResources(this.HDG180, "HDG180");
-            this.HDG180.ForeColor = System.Drawing.Color.Red;
-            this.HDG180.Name = "HDG180";
-            // 
-            // HDG135
-            // 
-            resources.ApplyResources(this.HDG135, "HDG135");
-            this.HDG135.ForeColor = System.Drawing.Color.Red;
-            this.HDG135.Name = "HDG135";
-            // 
-            // HDG45
-            // 
-            resources.ApplyResources(this.HDG45, "HDG45");
-            this.HDG45.ForeColor = System.Drawing.Color.Red;
-            this.HDG45.Name = "HDG45";
-            // 
-            // HDG360
-            // 
-            resources.ApplyResources(this.HDG360, "HDG360");
-            this.HDG360.ForeColor = System.Drawing.Color.Red;
-            this.HDG360.Name = "HDG360";
-            // 
-            // HDG90
-            // 
-            resources.ApplyResources(this.HDG90, "HDG90");
-            this.HDG90.ForeColor = System.Drawing.Color.Red;
-            this.HDG90.Name = "HDG90";
-            // 
-            // bearDir1
-            // 
-            this.bearDir1.BackColor = System.Drawing.Color.Transparent;
-            this.bearDir1.Direction = 360D;
-            resources.ApplyResources(this.bearDir1, "bearDir1");
-            this.bearDir1.Name = "bearDir1";
-            this.bearDir1.Speed = 0D;
-            // 
-            // absBearingValue
-            // 
-            resources.ApplyResources(this.absBearingValue, "absBearingValue");
-            this.absBearingValue.Name = "absBearingValue";
-            // 
-            // absBearingMsg
-            // 
-            resources.ApplyResources(this.absBearingMsg, "absBearingMsg");
-            this.absBearingMsg.Name = "absBearingMsg";
-            // 
-            // freqActive
-            // 
-            resources.ApplyResources(this.freqActive, "freqActive");
-            this.freqActive.Name = "freqActive";
-            // 
-            // freqLabelMSG
-            // 
-            resources.ApplyResources(this.freqLabelMSG, "freqLabelMSG");
-            this.freqLabelMSG.Name = "freqLabelMSG";
-            // 
-            // freqBox
-            // 
-            resources.ApplyResources(this.freqBox, "freqBox");
-            this.freqBox.Name = "freqBox";
-            this.toolTip1.SetToolTip(this.freqBox, resources.GetString("freqBox.ToolTip"));
-            // 
-            // BUTsetnewfrequency
-            // 
-            resources.ApplyResources(this.BUTsetnewfrequency, "BUTsetnewfrequency");
-            this.BUTsetnewfrequency.Name = "BUTsetnewfrequency";
-            this.toolTip1.SetToolTip(this.BUTsetnewfrequency, resources.GetString("BUTsetnewfrequency.ToolTip"));
-            this.BUTsetnewfrequency.UseVisualStyleBackColor = true;
-            this.BUTsetnewfrequency.Click += new System.EventHandler(this.BUTsetnewfrequency_Click);
-            // 
             // tableMap
             // 
             resources.ApplyResources(this.tableMap, "tableMap");
@@ -1823,7 +1823,7 @@
             this.windDir1.BackColor = System.Drawing.Color.Transparent;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 0D;
+            this.windDir1.Direction = 180D;
             resources.ApplyResources(this.windDir1, "windDir1");
             this.windDir1.Name = "windDir1";
             this.windDir1.Speed = 0D;
@@ -2055,6 +2055,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceHud)).EndInit();
             this.radioDF.ResumeLayout(false);
             this.contextMenuStripactionstab.ResumeLayout(false);
+            this.RDFpage.ResumeLayout(false);
+            this.RDFpage.PerformLayout();
             this.tabQuick.ResumeLayout(false);
             this.tableLayoutPanelQuick.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceQuickTab)).EndInit();
@@ -2075,8 +2077,6 @@
             this.tabScripts.PerformLayout();
             this.tabPagemessages.ResumeLayout(false);
             this.tabPagemessages.PerformLayout();
-            this.RDFpage.ResumeLayout(false);
-            this.RDFpage.PerformLayout();
             this.tableMap.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
