@@ -25,7 +25,7 @@ namespace MissionPlanner
     public class MAVLinkInterface: MAVLink, IDisposable
     {
         // Create an instance of the Caller delegate.
-        public Caller call;
+        //public Caller call;
 
         private static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
         public ICommsSerial BaseStream { get; set; }
@@ -2677,15 +2677,13 @@ Please check the following
             }
             catch { }
 
-            // Check if the packet is a absolue brearing packet. 
+            // Check if the packet is an absolue bearing packet. 
             if (buffer[5] == 188)
             {
 				ReceivedPacketByteSwap(buffer, 7);	//Swap bytes for magnitude data
 				ReceivedPacketByteSwap(buffer, 11);	//Swap bytes for angle data
                 // Get the bearing data out of the packet.
                 GetDetectedSignalData(ref buffer);
-
-                return buffer;
             }
 
             // update last valid packet receive time
@@ -3508,12 +3506,6 @@ Please check the following
                 
                 // Log the detected data.
 				absBearing.logDetectedXY(dataPkt.angle, dataPkt.magnitude);
-
-                // If the call has been subscribed too then it will execute.
-                if (call != null)
-                {
-                    call();
-                }
             }
             
         }
